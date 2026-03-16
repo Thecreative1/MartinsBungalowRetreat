@@ -3,234 +3,958 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martins Bungalow Retreat – Your escape in the cradle of Portugal</title>
-  <meta name="description" content="Unique bungalow retreat in the heart of Northern Portugal. Book direct for the best price. Multilingual service: EN, PT, NL, ES.">
+  <title>Martins Bungalow Retreat - Your escape in the cradle of Portugal</title>
+  <meta
+    name="description"
+    content="Unique bungalow retreat in the heart of Northern Portugal. Book direct for the best price. Multilingual service in English, Portuguese, Dutch and Spanish."
+  >
+  <meta name="theme-color" content="#38704a">
   <style>
-    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f2; color: #212121; }
-    header { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; background: #fff; border-bottom: 1px solid #e2e2e2; position: sticky; top: 0; z-index: 100; }
-    .logo { font-weight: bold; font-size: 1.6em; letter-spacing: 2px; color: #38704a;}
-    nav a { margin: 0 12px; text-decoration: none; color: #333; font-weight: 500; transition: color 0.2s;}
-    nav a:hover { color: #38704a; }
-    .lang-select { display: flex; gap: 8px; }
-    .lang-select button { border: none; background: none; cursor: pointer; font-size: 1.1em;}
-    .hero { background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') center/cover; min-height: 62vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-shadow: 1px 2px 6px rgba(0,0,0,0.33);}
-    .hero-content { background: rgba(56, 112, 74, 0.85); padding: 32px 24px; border-radius: 22px; text-align: center; max-width: 440px;}
-    .hero h1 { margin: 0; font-size: 2.3em;}
-    .hero p { margin-top: 18px; margin-bottom: 30px; font-size: 1.1em;}
-    .hero .cta { display: flex; gap: 16px; justify-content: center; }
-    .hero .cta button { padding: 13px 34px; font-size: 1em; border-radius: 25px; border: none; background: #ffd700; color: #222; font-weight: bold; cursor: pointer; box-shadow: 0 3px 16px rgba(0,0,0,0.11);}
-    .hero .cta button.secondary { background: #fff; color: #38704a; border: 2px solid #38704a;}
-    .section { padding: 54px 18px 38px 18px; max-width: 960px; margin: 0 auto;}
-    .section h2 { color: #38704a; margin-bottom: 16px;}
-    .features { display: flex; flex-wrap: wrap; gap: 34px; justify-content: center; }
-    .feature { background: #fff; border-radius: 18px; box-shadow: 0 2px 10px rgba(56,112,74,0.10); padding: 22px; width: 220px; text-align: center; }
-    .gallery { display: flex; gap: 10px; overflow-x: auto; margin: 26px 0;}
-    .gallery img { width: 240px; height: 170px; object-fit: cover; border-radius: 12px;}
-    .reviews { display: flex; gap: 18px; flex-wrap: wrap;}
-    .review { background: #e9f3eb; border-radius: 14px; padding: 22px; font-style: italic; max-width: 330px;}
-    .contact { text-align: center;}
-    .contact a { color: #38704a; text-decoration: underline;}
-    footer { background: #2e3830; color: #fff; text-align: center; padding: 28px 10px 16px 10px; font-size: 1.1em;}
-    @media (max-width: 700px) {
-      .features, .reviews { flex-direction: column; align-items: center;}
-      .hero-content { max-width: 98vw; }
-      .gallery img { width: 160px; height: 120px; }
+    :root {
+      --forest: #38704a;
+      --forest-dark: #244a31;
+      --sand: #f5f5f2;
+      --card: rgba(255, 255, 255, 0.96);
+      --text: #212121;
+      --muted: #5f675f;
+      --accent: #ffd700;
+      --shadow: 0 18px 40px rgba(36, 74, 49, 0.12);
+      --radius: 20px;
+      --header-height: 88px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255, 215, 0, 0.18), transparent 28%),
+        linear-gradient(180deg, #f8f7f1 0%, var(--sand) 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    a {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(255, 215, 0, 0.65);
+      outline-offset: 3px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 32px;
+      min-height: var(--header-height);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(56, 112, 74, 0.14);
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--forest);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2d2d2d;
+      font-weight: 600;
+      padding: 6px 0;
+    }
+
+    nav a:hover {
+      color: var(--forest);
+    }
+
+    .lang-select {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .lang-select button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(56, 112, 74, 0.18);
+      border-radius: 999px;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(36, 74, 49, 0.08);
+    }
+
+    .lang-select button[aria-pressed="true"] {
+      border-color: var(--forest);
+      background: #eef5ef;
+      box-shadow: 0 0 0 3px rgba(56, 112, 74, 0.12);
+    }
+
+    .hero {
+      min-height: calc(100vh - var(--header-height));
+      padding: 48px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(rgba(23, 44, 30, 0.38), rgba(23, 44, 30, 0.5)),
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80") center/cover;
+      color: #fff;
+    }
+
+    .hero-content {
+      width: min(100%, 720px);
+      padding: 36px 32px;
+      text-align: center;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(56, 112, 74, 0.9), rgba(36, 74, 49, 0.92));
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 18px auto 32px;
+      max-width: 58ch;
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .cta-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 176px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .cta-link.primary {
+      background: var(--accent);
+      color: #1d1d1d;
+    }
+
+    .cta-link.secondary {
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--forest);
+      border: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .cta-link:hover,
+    .lang-select button:hover {
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding-bottom: 40px;
+    }
+
+    .section {
+      width: min(100% - 32px, 1120px);
+      margin: 0 auto;
+      padding: 72px 0 0;
+      scroll-margin-top: calc(var(--header-height) + 16px);
+    }
+
+    .section-header {
+      margin-bottom: 24px;
+    }
+
+    .section-kicker {
+      margin: 0 0 8px;
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--forest);
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--forest);
+    }
+
+    .section-intro {
+      margin: 10px 0 0;
+      max-width: 70ch;
+      color: var(--muted);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .feature,
+    .review {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .feature {
+      min-height: 136px;
+      border: 1px solid rgba(56, 112, 74, 0.08);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--forest-dark);
+      font-size: 1.03rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-card {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .gallery-card figcaption {
+      padding: 14px 16px 18px;
+      font-weight: 600;
+      color: var(--forest-dark);
+    }
+
+    .experiences-list {
+      display: grid;
+      gap: 14px;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .review {
+      font-style: italic;
+      color: #314132;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .contact-panel,
+    .map-panel {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 18px 0 12px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--forest);
+      background: #eef5ef;
+    }
+
+    .contact-link:hover,
+    .cta-link:hover {
+      box-shadow: 0 10px 20px rgba(36, 74, 49, 0.16);
+    }
+
+    .address {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 280px;
+      border: 0;
+      border-radius: 16px;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding: 28px 20px 36px;
+      text-align: center;
+      background: #2e3830;
+      color: #fff;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer a:hover {
+      color: #fff6b3;
+    }
+
+    @media (max-width: 900px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px 20px;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      nav,
+      .lang-select {
+        justify-content: center;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --header-height: 140px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 36px;
+      }
+
+      .hero-content {
+        padding: 28px 22px;
+      }
+
+      .cta-link,
+      .contact-link {
+        width: 100%;
+      }
+
+      .section {
+        width: min(100% - 20px, 1120px);
+        padding-top: 56px;
+      }
+
+      .gallery-card img {
+        height: 200px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      button,
+      a {
+        transition: none;
+      }
     }
   </style>
+</head>
+<body id="top">
+  <header>
+    <a class="logo" href="#top" aria-label="Martins Bungalow Retreat">Martins Bungalow Retreat</a>
+    <nav aria-label="Primary">
+      <a href="#top" id="nav-home">Home</a>
+      <a href="#features" id="nav-features">Features</a>
+      <a href="#gallery" id="nav-gallery">Gallery</a>
+      <a href="#experiences" id="nav-experiences">Experiences</a>
+      <a href="#reviews" id="nav-reviews">Reviews</a>
+      <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+    <div class="lang-select" role="group" aria-label="Language selector">
+      <button type="button" data-lang="en" aria-label="English">
+        <img src="https://flagcdn.com/gb.svg" alt="" width="22" height="16">
+      </button>
+      <button type="button" data-lang="pt" aria-label="Português">
+        <img src="https://flagcdn.com/pt.svg" alt="" width="22" height="16">
+      </button>
+      <button type="button" data-lang="es" aria-label="Español">
+        <img src="https://flagcdn.com/es.svg" alt="" width="22" height="16">
+      </button>
+      <button type="button" data-lang="nl" aria-label="Nederlands">
+        <img src="https://flagcdn.com/nl.svg" alt="" width="22" height="16">
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="slogan">
+      <div class="hero-content">
+        <p class="eyebrow" id="hero-eyebrow">Northern Portugal retreat</p>
+        <h1 id="slogan">Your escape in the cradle of Portugal</h1>
+        <p id="hero-text">Discover a unique holiday experience surrounded by nature, tradition, and the authentic beauty of Northern Portugal.</p>
+        <div class="cta">
+          <a class="cta-link primary" href="#contact" id="book-btn">Book Now</a>
+          <a class="cta-link secondary" href="#gallery" id="gallery-btn">Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-header">
+        <p class="section-kicker" id="features-kicker">Stay with character</p>
+        <h2 id="features-title">Why Choose Us?</h2>
+        <p class="section-intro" id="features-intro">Comfort, privacy and a location that makes slow travel feel effortless.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <strong id="f1-title">Rustic atmosphere</strong>
+          <span id="f1">Rustic garden and sweeping nature views for quiet mornings.</span>
+        </article>
+        <article class="feature">
+          <strong id="f2-title">Outdoor comfort</strong>
+          <span id="f2">Pool area and sunny terrace designed for laid-back afternoons.</span>
+        </article>
+        <article class="feature">
+          <strong id="f3-title">Peaceful privacy</strong>
+          <span id="f3">A private, peaceful setting that works well for families.</span>
+        </article>
+        <article class="feature">
+          <strong id="f4-title">Easy practicalities</strong>
+          <span id="f4">Fast Wi-Fi and free parking so the stay remains stress free.</span>
+        </article>
+        <article class="feature">
+          <strong id="f5-title">Excellent base</strong>
+          <span id="f5">Minutes from historic Guimaraes and the best regional day trips.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-header">
+        <p class="section-kicker" id="gallery-kicker">Take a look</p>
+        <h2 id="gallery-title">Gallery</h2>
+        <p class="section-intro" id="gallery-intro">A quick preview of the mood, the spaces and the surrounding landscape.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+            alt="Rustic garden with mountain backdrop"
+            width="800"
+            height="600"
+            loading="lazy"
+          >
+          <figcaption id="g1">Garden views and peaceful mornings</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+            alt="Terrace outside the bungalow"
+            width="800"
+            height="600"
+            loading="lazy"
+          >
+          <figcaption id="g2">Bungalow terrace for long summer evenings</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+            alt="Outdoor swimming pool"
+            width="800"
+            height="600"
+            loading="lazy"
+          >
+          <figcaption id="g3">Refreshing pool area with sun all day</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=800&q=80"
+            alt="Green nature landscape near the retreat"
+            width="800"
+            height="600"
+            loading="lazy"
+          >
+          <figcaption id="g4">Northern Portugal landscapes right nearby</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="experiences" aria-labelledby="experiences-title">
+      <div class="section-header">
+        <p class="section-kicker" id="experiences-kicker">Explore more</p>
+        <h2 id="experiences-title">Experiences and Region</h2>
+        <p class="section-intro" id="experiences-intro">The bungalow sits close to heritage, food and outdoor routes that make the stay feel local.</p>
+      </div>
+      <ul class="experiences-list">
+        <li id="exp1">Discover wine routes, hiking trails and medieval castles.</li>
+        <li id="exp2">Enjoy authentic Portuguese gastronomy nearby.</li>
+        <li id="exp3">Plan easy day trips through villages, markets and riverside viewpoints.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-header">
+        <p class="section-kicker" id="reviews-kicker">Guests first</p>
+        <h2 id="reviews-title">Guest Reviews</h2>
+      </div>
+      <div class="reviews">
+        <blockquote class="review" id="r1">"Absolutely loved the garden and peaceful surroundings." - Anne (NL)</blockquote>
+        <blockquote class="review" id="r2">"Perfect getaway for our family. We will come back." - Marta (ES)</blockquote>
+        <blockquote class="review" id="r3">"The best hosts and a beautiful bungalow." - Tomas (PT)</blockquote>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-header">
+        <p class="section-kicker" id="contact-kicker">Plan your stay</p>
+        <h2 id="contact-title">Contact and Location</h2>
+        <p class="section-intro" id="contact-txt">Any questions? Reach out by WhatsApp or email, and use the map below to find the retreat.</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-panel">
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:info@martinsbungalow.com" id="email-link">Email us</a>
+            <a class="contact-link" href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer" id="whatsapp-link">WhatsApp</a>
+          </div>
+          <p class="address" id="address">Rua do Paraiso 123, Guimaraes, Portugal</p>
+        </div>
+        <div class="map-panel">
+          <iframe
+            src="https://maps.google.com/maps?q=Guimaraes&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Martins Bungalow Retreat location map"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat</p>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" id="instagram-link">Instagram</a>
+  </footer>
+
   <script>
-    // Simple language switcher (DEMO ONLY)
     const translations = {
       en: {
+        pageTitle: "Martins Bungalow Retreat - Your escape in the cradle of Portugal",
+        pageDescription: "Unique bungalow retreat in the heart of Northern Portugal. Book direct for the best price. Multilingual service in English, Portuguese, Dutch and Spanish.",
+        heroEyebrow: "Northern Portugal retreat",
         slogan: "Your escape in the cradle of Portugal",
         heroText: "Discover a unique holiday experience surrounded by nature, tradition, and the authentic beauty of Northern Portugal.",
         book: "Book Now",
         gallery: "Gallery",
+        navHome: "Home",
+        navFeatures: "Features",
+        navGallery: "Gallery",
+        navExperiences: "Experiences",
+        navReviews: "Reviews",
+        navContact: "Contact",
+        featuresKicker: "Stay with character",
         features: "Why Choose Us?",
-        f1: "Rustic garden & nature views",
-        f2: "Pool & sun terrace",
-        f3: "Private, peaceful, family-friendly",
-        f4: "Fast Wi-Fi & free parking",
-        f5: "Close to historic Guimarães",
-        experiences: "Experiences & Region",
+        featuresIntro: "Comfort, privacy and a location that makes slow travel feel effortless.",
+        f1Title: "Rustic atmosphere",
+        f1: "Rustic garden and sweeping nature views for quiet mornings.",
+        f2Title: "Outdoor comfort",
+        f2: "Pool area and sunny terrace designed for laid-back afternoons.",
+        f3Title: "Peaceful privacy",
+        f3: "A private, peaceful setting that works well for families.",
+        f4Title: "Easy practicalities",
+        f4: "Fast Wi-Fi and free parking so the stay remains stress free.",
+        f5Title: "Excellent base",
+        f5: "Minutes from historic Guimaraes and the best regional day trips.",
+        galleryKicker: "Take a look",
+        galleryTitle: "Gallery",
+        galleryIntro: "A quick preview of the mood, the spaces and the surrounding landscape.",
+        g1: "Garden views and peaceful mornings",
+        g2: "Bungalow terrace for long summer evenings",
+        g3: "Refreshing pool area with sun all day",
+        g4: "Northern Portugal landscapes right nearby",
+        experiencesKicker: "Explore more",
+        experiences: "Experiences and Region",
+        experiencesIntro: "The bungalow sits close to heritage, food and outdoor routes that make the stay feel local.",
         exp1: "Discover wine routes, hiking trails and medieval castles.",
         exp2: "Enjoy authentic Portuguese gastronomy nearby.",
+        exp3: "Plan easy day trips through villages, markets and riverside viewpoints.",
+        reviewsKicker: "Guests first",
         reviews: "Guest Reviews",
-        r1: "‘Absolutely loved the garden and peaceful surroundings!’ – Anne (NL)",
-        r2: "‘Perfect getaway for our family. We'll come back!’ – Marta (ES)",
-        r3: "‘The best hosts! Beautiful bungalow.’ – Tomás (PT)",
-        contact: "Contact & Location",
-        contactTxt: "Any questions? Contact us via WhatsApp, email or see our exact location:",
-        address: "Rua do Paraíso 123, Guimarães, Portugal"
+        r1: "\"Absolutely loved the garden and peaceful surroundings.\" - Anne (NL)",
+        r2: "\"Perfect getaway for our family. We will come back.\" - Marta (ES)",
+        r3: "\"The best hosts and a beautiful bungalow.\" - Tomas (PT)",
+        contactKicker: "Plan your stay",
+        contact: "Contact and Location",
+        contactTxt: "Any questions? Reach out by WhatsApp or email, and use the map below to find the retreat.",
+        email: "Email us",
+        whatsapp: "WhatsApp",
+        address: "Rua do Paraiso 123, Guimaraes, Portugal",
+        footer: "Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat",
+        mapTitle: "Martins Bungalow Retreat location map"
       },
       pt: {
-        slogan: "O seu refúgio no berço de Portugal",
-        heroText: "Viva uma experiência única de descanso, rodeado pela natureza, tradições e a beleza genuína do Norte de Portugal.",
+        pageTitle: "Martins Bungalow Retreat - O seu refugio no berco de Portugal",
+        pageDescription: "Bungalow de charme no coracao do Norte de Portugal. Reserve diretamente pelo melhor preco. Atendimento em portugues, ingles, neerlandes e espanhol.",
+        heroEyebrow: "Refugio no Norte de Portugal",
+        slogan: "O seu refugio no berco de Portugal",
+        heroText: "Viva uma experiencia unica de descanso, rodeado pela natureza, tradicoes e a beleza genuina do Norte de Portugal.",
         book: "Reservar Agora",
         gallery: "Galeria",
-        features: "Porquê Escolher-nos?",
-        f1: "Jardim rústico e vistas de natureza",
-        f2: "Piscina e solário",
-        f3: "Privado, tranquilo, ideal para famílias",
-        f4: "Wi-Fi rápido e estacionamento grátis",
-        f5: "Perto do centro histórico de Guimarães",
-        experiences: "Experiências & Região",
+        navHome: "Inicio",
+        navFeatures: "Destaques",
+        navGallery: "Galeria",
+        navExperiences: "Experiencias",
+        navReviews: "Testemunhos",
+        navContact: "Contacto",
+        featuresKicker: "Estadia com identidade",
+        features: "Porque escolher-nos?",
+        featuresIntro: "Conforto, privacidade e uma localizacao que torna a viagem mais leve e memoravel.",
+        f1Title: "Ambiente rustico",
+        f1: "Jardim rustico e vistas amplas para a natureza, ideais para manhas tranquilas.",
+        f2Title: "Conforto ao ar livre",
+        f2: "Piscina e terraco solarengo pensados para tardes relaxadas.",
+        f3Title: "Privacidade serena",
+        f3: "Um espaco privado e tranquilo, ideal para familias.",
+        f4Title: "Tudo facil",
+        f4: "Wi-Fi rapido e estacionamento gratuito para uma estadia sem complicacoes.",
+        f5Title: "Base perfeita",
+        f5: "A poucos minutos do centro historico de Guimaraes e de otimos passeios na regiao.",
+        galleryKicker: "Veja o ambiente",
+        galleryTitle: "Galeria",
+        galleryIntro: "Uma amostra rapida dos espacos, da atmosfera e da paisagem envolvente.",
+        g1: "Vistas do jardim para comecar o dia com calma",
+        g2: "Terraco do bungalow para fins de tarde longos",
+        g3: "Piscina exterior para aproveitar o sol",
+        g4: "Paisagens do Norte de Portugal logo ali ao lado",
+        experiencesKicker: "Explore a regiao",
+        experiences: "Experiencias e Regiao",
+        experiencesIntro: "O bungalow fica perto de patrimonio, gastronomia e percursos ao ar livre que tornam a estadia autentica.",
         exp1: "Descubra rotas de vinho, trilhos pedestres e castelos medievais.",
-        exp2: "Saboreie a gastronomia portuguesa autêntica nas redondezas.",
+        exp2: "Saboreie a gastronomia portuguesa autentica nas redondezas.",
+        exp3: "Planeie passeios por aldeias, mercados e miradouros junto ao rio.",
+        reviewsKicker: "Hospedes em primeiro lugar",
         reviews: "Testemunhos",
-        r1: "‘Adorámos o jardim e a tranquilidade!’ – Anne (NL)",
-        r2: "‘Perfeito para a nossa família. Voltaremos!’ – Marta (ES)",
-        r3: "‘Os melhores anfitriões! Bungalow lindíssimo.’ – Tomás (PT)",
-        contact: "Contactos & Localização",
-        contactTxt: "Dúvidas? Fale connosco por WhatsApp, email ou veja a nossa localização:",
-        address: "Rua do Paraíso 123, Guimarães, Portugal"
+        r1: "\"Adoramos o jardim e a tranquilidade do lugar.\" - Anne (NL)",
+        r2: "\"Perfeito para a nossa familia. Vamos voltar.\" - Marta (ES)",
+        r3: "\"Os melhores anfitrioes e um bungalow lindissimo.\" - Tomas (PT)",
+        contactKicker: "Planeie a estadia",
+        contact: "Contacto e Localizacao",
+        contactTxt: "Tem perguntas? Fale connosco por WhatsApp ou email e use o mapa abaixo para encontrar o refugio.",
+        email: "Enviar email",
+        whatsapp: "WhatsApp",
+        address: "Rua do Paraiso 123, Guimaraes, Portugal",
+        footer: "Feito em Portugal para estadias calmas e memoraveis - 2026 Martins Bungalow Retreat",
+        mapTitle: "Mapa de localizacao do Martins Bungalow Retreat"
       },
       nl: {
-        slogan: "Jouw toevluchtsoord in de wieg van Portugal",
-        heroText: "Beleef een unieke vakantie te midden van natuur, traditie en de authentieke schoonheid van Noord-Portugal.",
+        pageTitle: "Martins Bungalow Retreat - Jouw toevlucht in de wieg van Portugal",
+        pageDescription: "Uniek bungalowverblijf in het hart van Noord-Portugal. Boek direct voor de beste prijs. Meertalige service in het Engels, Portugees, Nederlands en Spaans.",
+        heroEyebrow: "Verblijf in Noord-Portugal",
+        slogan: "Jouw toevlucht in de wieg van Portugal",
+        heroText: "Beleef een unieke vakantie midden in natuur, traditie en de authentieke schoonheid van Noord-Portugal.",
         book: "Boek Nu",
         gallery: "Galerij",
+        navHome: "Home",
+        navFeatures: "Pluspunten",
+        navGallery: "Galerij",
+        navExperiences: "Ervaringen",
+        navReviews: "Reviews",
+        navContact: "Contact",
+        featuresKicker: "Verblijf met karakter",
         features: "Waarom voor ons kiezen?",
-        f1: "Rustieke tuin & natuurzicht",
-        f2: "Zwembad en zonneterras",
-        f3: "Privé, rustig, gezinsvriendelijk",
-        f4: "Snel Wi-Fi & gratis parkeren",
-        f5: "Dichtbij historisch Guimarães",
-        experiences: "Ervaringen & Regio",
+        featuresIntro: "Comfort, privacy en een locatie die rustig reizen eenvoudig maakt.",
+        f1Title: "Sfeervolle rust",
+        f1: "Rustieke tuin en weidse natuurzichten voor stille ochtenden.",
+        f2Title: "Buiten genieten",
+        f2: "Zwembad en zonnig terras voor ontspannen middagen.",
+        f3Title: "Veel privacy",
+        f3: "Een prive en rustige plek die ideaal is voor gezinnen.",
+        f4Title: "Praktisch geregeld",
+        f4: "Snelle Wi-Fi en gratis parkeren voor een zorgeloos verblijf.",
+        f5Title: "Ideale uitvalsbasis",
+        f5: "Dicht bij historisch Guimaraes en de mooiste uitstappen in de regio.",
+        galleryKicker: "Sfeerimpressie",
+        galleryTitle: "Galerij",
+        galleryIntro: "Een snelle blik op de sfeer, de ruimtes en het omliggende landschap.",
+        g1: "Tuinzichten en rustige ochtenden",
+        g2: "Terras bij de bungalow voor lange zomeravonden",
+        g3: "Verfrissend zwembad met de hele dag zon",
+        g4: "Landschappen van Noord-Portugal vlakbij",
+        experiencesKicker: "Ontdek meer",
+        experiences: "Ervaringen en Regio",
+        experiencesIntro: "De bungalow ligt dicht bij erfgoed, gastronomie en buitenroutes die het verblijf lokaal laten aanvoelen.",
         exp1: "Ontdek wijnroutes, wandelpaden en middeleeuwse kastelen.",
         exp2: "Geniet van authentieke Portugese gastronomie in de buurt.",
+        exp3: "Plan makkelijke dagtrips langs dorpen, markten en uitzichtpunten aan de rivier.",
+        reviewsKicker: "Gasten eerst",
         reviews: "Gastenreviews",
-        r1: "‘We hebben genoten van de tuin en de rust!’ – Anne (NL)",
-        r2: "‘Perfecte uitvalsbasis voor het gezin. We komen terug!’ – Marta (ES)",
-        r3: "‘Fantastische hosts! Mooi bungalow.’ – Tomás (PT)",
-        contact: "Contact & Locatie",
-        contactTxt: "Vragen? Neem contact op via WhatsApp, e-mail of bekijk onze locatie:",
-        address: "Rua do Paraíso 123, Guimarães, Portugal"
+        r1: "\"We hebben echt genoten van de tuin en de rust.\" - Anne (NL)",
+        r2: "\"Perfect voor ons gezin. We komen terug.\" - Marta (ES)",
+        r3: "\"De beste hosts en een prachtig bungalow.\" - Tomas (PT)",
+        contactKicker: "Plan je verblijf",
+        contact: "Contact en Locatie",
+        contactTxt: "Vragen? Neem contact op via WhatsApp of e-mail en gebruik de kaart hieronder om het verblijf te vinden.",
+        email: "E-mail ons",
+        whatsapp: "WhatsApp",
+        address: "Rua do Paraiso 123, Guimaraes, Portugal",
+        footer: "Gemaakt in Portugal voor rustige, memorabele verblijven - 2026 Martins Bungalow Retreat",
+        mapTitle: "Locatiekaart van Martins Bungalow Retreat"
       },
       es: {
+        pageTitle: "Martins Bungalow Retreat - Tu refugio en la cuna de Portugal",
+        pageDescription: "Alojamiento tipo bungalow en el corazon del norte de Portugal. Reserva directa al mejor precio. Atencion en ingles, portugues, neerlandes y espanol.",
+        heroEyebrow: "Escapada en el norte de Portugal",
         slogan: "Tu refugio en la cuna de Portugal",
-        heroText: "Disfruta de una escapada única entre la naturaleza y la historia, en el norte de Portugal, muy cerca de ti.",
+        heroText: "Disfruta de una escapada unica entre la naturaleza, la tradicion y la belleza autentica del norte de Portugal.",
         book: "Reservar Ahora",
-        gallery: "Galería",
-        features: "¿Por qué elegirnos?",
-        f1: "Jardín rústico y vistas a la naturaleza",
-        f2: "Piscina y solárium",
-        f3: "Privado, tranquilo, ideal para familias",
-        f4: "Wi-Fi rápido y parking gratis",
-        f5: "Cerca del casco histórico de Guimarães",
-        experiences: "Experiencias & Región",
+        gallery: "Galeria",
+        navHome: "Inicio",
+        navFeatures: "Ventajas",
+        navGallery: "Galeria",
+        navExperiences: "Experiencias",
+        navReviews: "Resenas",
+        navContact: "Contacto",
+        featuresKicker: "Una estancia con personalidad",
+        features: "Por que elegirnos?",
+        featuresIntro: "Comodidad, privacidad y una ubicacion que hace que viajar sin prisa resulte natural.",
+        f1Title: "Ambiente rustico",
+        f1: "Jardin rustico y vistas amplias a la naturaleza para empezar el dia con calma.",
+        f2Title: "Confort exterior",
+        f2: "Piscina y terraza soleada pensadas para tardes relajadas.",
+        f3Title: "Privacidad total",
+        f3: "Un espacio privado y tranquilo ideal para familias.",
+        f4Title: "Todo facil",
+        f4: "Wi-Fi rapido y aparcamiento gratuito para una estancia sin complicaciones.",
+        f5Title: "Base excelente",
+        f5: "A pocos minutos del centro historico de Guimaraes y de grandes excursiones por la region.",
+        galleryKicker: "Mira el ambiente",
+        galleryTitle: "Galeria",
+        galleryIntro: "Un vistazo rapido al ambiente, los espacios y el paisaje de alrededor.",
+        g1: "Vistas al jardin y mananas tranquilas",
+        g2: "Terraza del bungalow para largas tardes de verano",
+        g3: "Piscina exterior para refrescarse al sol",
+        g4: "Paisajes del norte de Portugal muy cerca",
+        experiencesKicker: "Explora mas",
+        experiences: "Experiencias y Region",
+        experiencesIntro: "El bungalow esta cerca de patrimonio, gastronomia y rutas al aire libre que hacen que la estancia se sienta local.",
         exp1: "Descubre rutas del vino, senderos y castillos medievales.",
-        exp2: "Saborea la auténtica gastronomía portuguesa cerca.",
-        reviews: "Opiniones de huéspedes",
-        r1: "‘Nos encantó el jardín y la tranquilidad.’ – Anne (NL)",
-        r2: "‘Perfecto para nuestra familia. ¡Volveremos!’ – Marta (ES)",
-        r3: "‘Los mejores anfitriones. Precioso bungalow.’ – Tomás (PT)",
-        contact: "Contacto & Ubicación",
-        contactTxt: "¿Dudas? Contáctanos por WhatsApp, correo electrónico o consulta nuestra ubicación:",
-        address: "Rua do Paraíso 123, Guimarães, Portugal"
+        exp2: "Saborea la gastronomia portuguesa autentica en los alrededores.",
+        exp3: "Planea excursiones sencillas por pueblos, mercados y miradores junto al rio.",
+        reviewsKicker: "Los huespedes primero",
+        reviews: "Opiniones de huespedes",
+        r1: "\"Nos encanto el jardin y la tranquilidad.\" - Anne (NL)",
+        r2: "\"Perfecto para nuestra familia. Volveremos.\" - Marta (ES)",
+        r3: "\"Los mejores anfitriones y un bungalow precioso.\" - Tomas (PT)",
+        contactKicker: "Planifica tu estancia",
+        contact: "Contacto y Ubicacion",
+        contactTxt: "Tienes preguntas? Escribenos por WhatsApp o correo y usa el mapa de abajo para encontrar el alojamiento.",
+        email: "Enviar correo",
+        whatsapp: "WhatsApp",
+        address: "Rua do Paraiso 123, Guimaraes, Portugal",
+        footer: "Hecho en Portugal para estancias tranquilas y memorables - 2026 Martins Bungalow Retreat",
+        mapTitle: "Mapa de ubicacion de Martins Bungalow Retreat"
       }
     };
-    function setLang(lang) {
-      const t = translations[lang];
-      document.getElementById('slogan').textContent = t.slogan;
-      document.getElementById('hero-text').textContent = t.heroText;
-      document.getElementById('book-btn').textContent = t.book;
-      document.getElementById('gallery-btn').textContent = t.gallery;
-      document.getElementById('features-title').textContent = t.features;
-      document.getElementById('f1').textContent = t.f1;
-      document.getElementById('f2').textContent = t.f2;
-      document.getElementById('f3').textContent = t.f3;
-      document.getElementById('f4').textContent = t.f4;
-      document.getElementById('f5').textContent = t.f5;
-      document.getElementById('experiences-title').textContent = t.experiences;
-      document.getElementById('exp1').textContent = t.exp1;
-      document.getElementById('exp2').textContent = t.exp2;
-      document.getElementById('reviews-title').textContent = t.reviews;
-      document.getElementById('r1').textContent = t.r1;
-      document.getElementById('r2').textContent = t.r2;
-      document.getElementById('r3').textContent = t.r3;
-      document.getElementById('contact-title').textContent = t.contact;
-      document.getElementById('contact-txt').textContent = t.contactTxt;
-      document.getElementById('address').textContent = t.address;
+
+    const textMap = {
+      slogan: "slogan",
+      "hero-eyebrow": "heroEyebrow",
+      "hero-text": "heroText",
+      "book-btn": "book",
+      "gallery-btn": "gallery",
+      "nav-home": "navHome",
+      "nav-features": "navFeatures",
+      "nav-gallery": "navGallery",
+      "nav-experiences": "navExperiences",
+      "nav-reviews": "navReviews",
+      "nav-contact": "navContact",
+      "features-kicker": "featuresKicker",
+      "features-title": "features",
+      "features-intro": "featuresIntro",
+      "f1-title": "f1Title",
+      f1: "f1",
+      "f2-title": "f2Title",
+      f2: "f2",
+      "f3-title": "f3Title",
+      f3: "f3",
+      "f4-title": "f4Title",
+      f4: "f4",
+      "f5-title": "f5Title",
+      f5: "f5",
+      "gallery-kicker": "galleryKicker",
+      "gallery-title": "galleryTitle",
+      "gallery-intro": "galleryIntro",
+      g1: "g1",
+      g2: "g2",
+      g3: "g3",
+      g4: "g4",
+      "experiences-kicker": "experiencesKicker",
+      "experiences-title": "experiences",
+      "experiences-intro": "experiencesIntro",
+      exp1: "exp1",
+      exp2: "exp2",
+      exp3: "exp3",
+      "reviews-kicker": "reviewsKicker",
+      "reviews-title": "reviews",
+      r1: "r1",
+      r2: "r2",
+      r3: "r3",
+      "contact-kicker": "contactKicker",
+      "contact-title": "contact",
+      "contact-txt": "contactTxt",
+      "email-link": "email",
+      "whatsapp-link": "whatsapp",
+      address: "address",
+      "footer-text": "footer"
+    };
+
+    function applyLanguage(lang) {
+      const selectedLang = translations[lang] ? lang : "en";
+      const t = translations[selectedLang];
+
+      document.documentElement.lang = selectedLang;
+      document.title = t.pageTitle;
+
+      const description = document.querySelector('meta[name="description"]');
+      if (description) {
+        description.setAttribute("content", t.pageDescription);
+      }
+
+      Object.entries(textMap).forEach(([id, key]) => {
+        const element = document.getElementById(id);
+        if (element && t[key]) {
+          element.textContent = t[key];
+        }
+      });
+
+      const mapFrame = document.querySelector("iframe");
+      if (mapFrame) {
+        mapFrame.title = t.mapTitle;
+      }
+
+      document.querySelectorAll("[data-lang]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === selectedLang));
+      });
+
+      try {
+        localStorage.setItem("preferred-language", selectedLang);
+      } catch (error) {
+        console.warn("Unable to store preferred language.", error);
+      }
     }
-    window.onload = () => setLang('en');
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-lang]").forEach((button) => {
+        button.addEventListener("click", () => {
+          applyLanguage(button.dataset.lang);
+        });
+      });
+
+      let initialLang = "en";
+      let hasStoredPreference = false;
+
+      try {
+        const storedLanguage = localStorage.getItem("preferred-language");
+        if (storedLanguage) {
+          initialLang = storedLanguage;
+          hasStoredPreference = true;
+        }
+      } catch (error) {
+        console.warn("Unable to read preferred language.", error);
+      }
+
+      if (!hasStoredPreference && navigator.language) {
+        const browserLang = navigator.language.toLowerCase().split("-")[0];
+        if (translations[browserLang]) {
+          initialLang = browserLang;
+        }
+      }
+
+      applyLanguage(initialLang);
+    });
   </script>
-</head>
-<body>
-  <header>
-    <span class="logo">Martins Bungalow Retreat</span>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#features" id="features-link">Features</a>
-      <a href="#gallery" id="gallery-link">Gallery</a>
-      <a href="#experiences" id="experiences-link">Experiences</a>
-      <a href="#reviews" id="reviews-link">Reviews</a>
-      <a href="#contact" id="contact-link">Contact</a>
-    </nav>
-    <div class="lang-select">
-      <button onclick="setLang('en')" aria-label="English"><img src="https://flagcdn.com/gb.svg" alt="English" width="22"></button>
-      <button onclick="setLang('pt')" aria-label="Português"><img src="https://flagcdn.com/pt.svg" alt="Português" width="22"></button>
-      <button onclick="setLang('es')" aria-label="Español"><img src="https://flagcdn.com/es.svg" alt="Español" width="22"></button>
-      <button onclick="setLang('nl')" aria-label="Nederlands"><img src="https://flagcdn.com/nl.svg" alt="Nederlands" width="22"></button>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="hero-content">
-      <h1 id="slogan">Your escape in the cradle of Portugal</h1>
-      <p id="hero-text">Discover a unique holiday experience surrounded by nature, tradition, and the authentic beauty of Northern Portugal.</p>
-      <div class="cta">
-        <button id="book-btn">Book Now</button>
-        <button class="secondary" id="gallery-btn">Gallery</button>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="features">
-    <h2 id="features-title">Why Choose Us?</h2>
-    <div class="features">
-      <div class="feature"><span id="f1">Rustic garden & nature views</span></div>
-      <div class="feature"><span id="f2">Pool & sun terrace</span></div>
-      <div class="feature"><span id="f3">Private, peaceful, family-friendly</span></div>
-      <div class="feature"><span id="f4">Fast Wi-Fi & free parking</span></div>
-      <div class="feature"><span id="f5">Close to historic Guimarães</span></div>
-    </div>
-  </section>
-  <section class="section" id="gallery">
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Rustic garden">
-      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Bungalow terrace">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Swimming pool">
-      <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=600&q=80" alt="Nature view">
-    </div>
-  </section>
-  <section class="section" id="experiences">
-    <h2 id="experiences-title">Experiences & Region</h2>
-    <ul>
-      <li id="exp1">Discover wine routes, hiking trails and medieval castles.</li>
-      <li id="exp2">Enjoy authentic Portuguese gastronomy nearby.</li>
-    </ul>
-  </section>
-  <section class="section" id="reviews">
-    <h2 id="reviews-title">Guest Reviews</h2>
-    <div class="reviews">
-      <div class="review" id="r1">‘Absolutely loved the garden and peaceful surroundings!’ – Anne (NL)</div>
-      <div class="review" id="r2">‘Perfect getaway for our family. We'll come back!’ – Marta (ES)</div>
-      <div class="review" id="r3">‘The best hosts! Beautiful bungalow.’ – Tomás (PT)</div>
-    </div>
-  </section>
-  <section class="section contact" id="contact">
-    <h2 id="contact-title">Contact & Location</h2>
-    <p id="contact-txt">Any questions? Contact us via WhatsApp, email or see our exact location:</p>
-    <p>
-      <a href="mailto:info@martinsbungalow.com">info@martinsbungalow.com</a> |
-      <a href="https://wa.me/351912345678">WhatsApp</a>
-    </p>
-    <p id="address">Rua do Paraíso 123, Guimarães, Portugal</p>
-    <iframe
-      src="https://maps.google.com/maps?q=Guimar%C3%A3es&t=&z=15&ie=UTF8&iwloc=&output=embed"
-      width="95%" height="180" frameborder="0" style="border-radius:12px; margin-top:10px;" allowfullscreen
-      aria-label="Location map"></iframe>
-  </section>
-  <footer>
-    Feito com ❤️ em Portugal – 2025 · Martins Bungalow Retreat · <a href="https://www.instagram.com/" target="_blank" style="color:#ffd700;">Instagram</a>
-  </footer>
 </body>
 </html>
