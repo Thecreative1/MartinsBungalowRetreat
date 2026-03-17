@@ -9,7 +9,8 @@ const homeTranslations = {
       stay: "Stay",
       gallery: "Gallery",
       region: "Region",
-      about: "About us",
+      reviews: "Reviews",
+      about: "About Us",
       journal: "Journal",
       contact: "Contact"
     },
@@ -152,6 +153,26 @@ const homeTranslations = {
         text: "The bungalow also makes sense for guests who want to stay longer and settle into a quieter rhythm in the region."
       }
     },
+    reviews: {
+      kicker: "Guests first",
+      title: "What guests say after their stay",
+      intro: "Real feedback helps future guests picture the stay with more confidence.",
+      card1: {
+        tag: "Garden and calm",
+        quote: "\"Absolutely loved the garden and peaceful surroundings.\"",
+        author: "Anne (NL)"
+      },
+      card2: {
+        tag: "Family stay",
+        quote: "\"Perfect getaway for our family. We will come back.\"",
+        author: "Marta (ES)"
+      },
+      card3: {
+        tag: "Hosting",
+        quote: "\"The best hosts and a beautiful bungalow.\"",
+        author: "Tomas (PT)"
+      }
+    },
     journal: {
       kicker: "Journal and blog",
       title: "Stories, guides, and seasonal notes from the region",
@@ -234,6 +255,7 @@ const homeTranslations = {
       stay: "Estadia",
       gallery: "Galeria",
       region: "Regiao",
+      reviews: "Testemunhos",
       about: "Sobre nos",
       journal: "Blog",
       contact: "Contacto"
@@ -377,6 +399,26 @@ const homeTranslations = {
         text: "O bungalow tambem faz sentido para hospedes que querem ficar mais tempo e entrar num ritmo mais tranquilo na regiao."
       }
     },
+    reviews: {
+      kicker: "Hospedes em primeiro lugar",
+      title: "O que os hospedes dizem depois da estadia",
+      intro: "Opinioes reais ajudam futuros hospedes a imaginar a experiencia com mais confianca.",
+      card1: {
+        tag: "Jardim e calma",
+        quote: "\"Adoramos o jardim e a tranquilidade do espaco.\"",
+        author: "Anne (NL)"
+      },
+      card2: {
+        tag: "Estadia em familia",
+        quote: "\"Escapadinha perfeita para a nossa familia. Vamos voltar.\"",
+        author: "Marta (ES)"
+      },
+      card3: {
+        tag: "Anfitrioes",
+        quote: "\"Os melhores anfitrioes e um bungalow lindissimo.\"",
+        author: "Tomas (PT)"
+      }
+    },
     journal: {
       kicker: "Blog e historias",
       title: "Historias, guias e notas sazonais da regiao",
@@ -459,6 +501,7 @@ const homeTranslations = {
       stay: "Estancia",
       gallery: "Galeria",
       region: "Region",
+      reviews: "Resenas",
       about: "Sobre nosotros",
       journal: "Blog",
       contact: "Contacto"
@@ -602,6 +645,26 @@ const homeTranslations = {
         text: "El bungalow tambien encaja con viajeros que quieren quedarse mas tiempo y entrar en un ritmo mas tranquilo en la region."
       }
     },
+    reviews: {
+      kicker: "Los huespedes primero",
+      title: "Lo que dicen los huespedes despues de la estancia",
+      intro: "Las opiniones reales ayudan a futuros huespedes a imaginar la experiencia con mas confianza.",
+      card1: {
+        tag: "Jardin y calma",
+        quote: "\"Nos encanto el jardin y la tranquilidad del entorno.\"",
+        author: "Anne (NL)"
+      },
+      card2: {
+        tag: "Estancia familiar",
+        quote: "\"Escapada perfecta para nuestra familia. Volveremos.\"",
+        author: "Marta (ES)"
+      },
+      card3: {
+        tag: "Anfitriones",
+        quote: "\"Los mejores anfitriones y un bungalow precioso.\"",
+        author: "Tomas (PT)"
+      }
+    },
     journal: {
       kicker: "Blog e historias",
       title: "Historias, guias y notas de temporada de la region",
@@ -684,6 +747,7 @@ const homeTranslations = {
       stay: "Verblijf",
       gallery: "Galerij",
       region: "Regio",
+      reviews: "Reviews",
       about: "Over ons",
       journal: "Blog",
       contact: "Contact"
@@ -825,6 +889,26 @@ const homeTranslations = {
         tag: "Langere verblijven",
         title: "Een basis voor reizigers die meer willen dan een korte stop",
         text: "De bungalow past ook bij gasten die langer willen blijven en in een rustiger ritme van de regio willen komen."
+      }
+    },
+    reviews: {
+      kicker: "Gasten eerst",
+      title: "Wat gasten na hun verblijf zeggen",
+      intro: "Echte reacties helpen toekomstige gasten het verblijf met meer vertrouwen voor zich te zien.",
+      card1: {
+        tag: "Tuin en rust",
+        quote: "\"We hielden absoluut van de tuin en de rustige omgeving.\"",
+        author: "Anne (NL)"
+      },
+      card2: {
+        tag: "Familieverblijf",
+        quote: "\"Perfect uitje voor ons gezin. We komen terug.\"",
+        author: "Marta (ES)"
+      },
+      card3: {
+        tag: "Gastvrijheid",
+        quote: "\"De beste hosts en een prachtige bungalow.\"",
+        author: "Tomas (PT)"
       }
     },
     journal: {
