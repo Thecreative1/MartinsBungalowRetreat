@@ -9,6 +9,7 @@ const homeTranslations = {
       stay: "Stay",
       gallery: "Gallery",
       region: "Region",
+      about: "About us",
       journal: "Journal",
       contact: "Contact"
     },
@@ -231,6 +232,7 @@ const homeTranslations = {
       stay: "Estadia",
       gallery: "Galeria",
       region: "Regiao",
+      about: "Sobre nos",
       journal: "Blog",
       contact: "Contacto"
     },
@@ -453,6 +455,7 @@ const homeTranslations = {
       stay: "Estancia",
       gallery: "Galeria",
       region: "Region",
+      about: "Sobre nosotros",
       journal: "Blog",
       contact: "Contacto"
     },
@@ -675,6 +678,7 @@ const homeTranslations = {
       stay: "Verblijf",
       gallery: "Galerij",
       region: "Regio",
+      about: "Over ons",
       journal: "Blog",
       contact: "Contact"
     },

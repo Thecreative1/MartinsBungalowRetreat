@@ -138,6 +138,35 @@ a:focus-visible {
   color: #fff;
 }
 
+.language-switcher--flags {
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.language-switcher--flags button {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(32, 55, 42, 0.12);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(36, 74, 49, 0.08);
+}
+
+.language-switcher--flags button img {
+  display: block;
+  width: 22px;
+  height: 16px;
+}
+
+.language-switcher--flags button[aria-pressed="true"] {
+  background: #eef5ef;
+  color: inherit;
+  box-shadow: 0 0 0 3px rgba(52, 88, 68, 0.12);
+}
+
 .site-main {
   padding-bottom: 48px;
 }
