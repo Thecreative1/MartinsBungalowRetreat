@@ -5,6 +5,7 @@ const homeTranslations = {
       description: "Martins Bungalow Retreat is a garden bungalow stay near Guimaraes with space for slow travel, direct booking, and future destination stories."
     },
     nav: {
+      home: "Home",
       stay: "Stay",
       gallery: "Gallery",
       region: "Region",
@@ -117,6 +118,7 @@ const homeTranslations = {
       description: "Martins Bungalow Retreat e um bungalow com jardim perto de Guimaraes, pensado para descanso, reservas diretas e futuros artigos sobre a regiao."
     },
     nav: {
+      home: "Inicio",
       stay: "Estadia",
       gallery: "Galeria",
       region: "Regiao",
@@ -229,6 +231,7 @@ const homeTranslations = {
       description: "Martins Bungalow Retreat es un bungalow con jardin cerca de Guimaraes, pensado para descanso, reservas directas y futuros articulos sobre la zona."
     },
     nav: {
+      home: "Inicio",
       stay: "Estancia",
       gallery: "Galeria",
       region: "Region",
@@ -341,6 +344,7 @@ const homeTranslations = {
       description: "Martins Bungalow Retreat is een bungalow met tuin bij Guimaraes, gemaakt voor rust, directe boekingen en toekomstige verhalen over de streek."
     },
     nav: {
+      home: "Home",
       stay: "Verblijf",
       gallery: "Galerij",
       region: "Regio",
