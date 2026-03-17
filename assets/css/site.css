@@ -13,6 +13,7 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --content-width: min(1180px, calc(100% - 40px));
+  --header-offset: 104px;
   --body-font: "Trebuchet MS", "Segoe UI", sans-serif;
   --heading-font: "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
@@ -23,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset);
 }
 
 body {
@@ -275,7 +277,7 @@ a:focus-visible {
 
 .section {
   padding-top: 80px;
-  scroll-margin-top: 104px;
+  scroll-margin-top: var(--header-offset);
 }
 
 .section-heading {
@@ -551,11 +553,13 @@ a:focus-visible {
 .map-card {
   overflow: hidden;
   padding: 8px;
+  display: flex;
 }
 
 .map-card iframe {
+  flex: 1 1 auto;
   width: 100%;
-  min-height: 100%;
+  min-height: 320px;
   border: 0;
   border-radius: 22px;
 }
@@ -701,6 +705,10 @@ a:focus-visible {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --header-offset: 188px;
+  }
+
   .site-header__inner,
   .page-hero,
   .split-layout,
@@ -732,14 +740,52 @@ a:focus-visible {
 @media (max-width: 680px) {
   :root {
     --content-width: min(1180px, calc(100% - 24px));
+    --header-offset: 224px;
   }
 
   .site-header__inner {
-    padding: 14px 0 18px;
+    gap: 14px;
+    padding: 14px 0 16px;
   }
 
   .site-brand {
+    font-size: 1.16rem;
+    letter-spacing: 0.03em;
     text-align: center;
+  }
+
+  .site-nav {
+    gap: 10px 14px;
+  }
+
+  .site-nav a {
+    font-size: 0.96rem;
+  }
+
+  .language-switcher {
+    gap: 6px;
+    padding: 5px;
+  }
+
+  .language-switcher button {
+    padding: 8px 10px;
+  }
+
+  .page-hero {
+    gap: 20px;
+    padding-top: 36px;
+  }
+
+  .page-hero__content h1,
+  .page-title {
+    font-size: clamp(2.3rem, 12vw, 3.2rem);
+    line-height: 1.02;
+  }
+
+  .lede,
+  .section-heading__intro,
+  .page-intro {
+    font-size: 1rem;
   }
 
   .facts-grid,
