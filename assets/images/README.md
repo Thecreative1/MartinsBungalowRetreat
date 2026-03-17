@@ -1,6 +1,6 @@
 # Images
 
-- `placeholders/` contains the temporary artwork already used by the homepage and blog.
-- `gallery/` is the future home for real accommodation photos.
-- `blog/` is the future home for article cover images and inline blog visuals.
-- You can either replace the placeholder files with final images that keep the same names, or update the `src` paths in the HTML pages.
+- `gallery/` now holds the local property visuals used on the homepage and `retreat.html`, with descriptive filenames that include the property and location.
+- `blog/` now holds the local cover images used on the blog landing page and starter posts, also using descriptive search-friendly filenames.
+- `placeholders/` is still available if you want draft artwork for future sections.
+- The image filenames are now keyword-led for clarity, but still readable. You can replace them later without changing page structure, or point the HTML to new image paths if you prefer.
