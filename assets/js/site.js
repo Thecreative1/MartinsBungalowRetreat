@@ -2,7 +2,7 @@ const homeTranslations = {
   en: {
     seo: {
       title: "Martins Bungalow Retreat | Slow stays near Guimaraes",
-      description: "Martins Bungalow Retreat is a garden bungalow stay near Guimaraes with space for slow travel, direct booking, and future destination stories."
+      description: "Martins Bungalow Retreat is a family-run bungalow near Guimaraes with direct booking, garden calm, and local stories from Northern Portugal."
     },
     nav: {
       home: "Home",
@@ -15,7 +15,7 @@ const homeTranslations = {
     hero: {
       eyebrow: "Boutique bungalow in Northern Portugal",
       title: "Slow mornings, stone paths, and a stay near Guimaraes",
-      text: "Martins Bungalow Retreat is designed for travellers who want garden calm, flexible outdoor living, and easy access to the history, food, and landscapes of Northern Portugal.",
+      text: "Martins Bungalow Retreat is a family-run bungalow near Guimaraes for travellers who want garden calm, outdoor living, and a more personal connection to Northern Portugal.",
       primaryCta: "Check availability",
       secondaryCta: "Explore the journal",
       figureAlt: "Photo of Martins Bungalow Retreat with bungalow, pool, and garden",
@@ -65,6 +65,36 @@ const homeTranslations = {
       list2: "Comfortable conditions for short breaks or slower, longer stays",
       list3: "Easy access to Guimaraes, nearby villages, and scenic routes",
       list4: "Direct contact for questions, planning, and booking"
+    },
+    about: {
+      kicker: "About us",
+      title: "A family between two worlds, now back at its roots",
+      intro: "We are Flavio, Karolina, Lara, and Liam, a family that believes in a simpler life, closer to nature and closer to what really matters.",
+      p1: "Flavio was born in Guimaraes and grew up among historic streets, granite, nearby mountains, and the Minho way of living. At 18 he left for the Netherlands with curiosity, courage, and the desire to see more of the world.",
+      p2: "What began as an adventure became more than 25 years of life in the Netherlands. It was there that we discovered other ways of living and working, where Flavio met Karolina, and where our family truly took shape.",
+      p3: "Over time we felt the need to slow down. We wanted more family time, more room to breathe, and daily life with more calm, more presence, and more truth in it.",
+      p4: "Returning to Portugal was not a step back. It was a conscious choice for a life closer to the land, to family, and to authenticity. We came back to Guimaraes and to Minho to create the bungalow we now share with our guests.",
+      p5: "Today Lara and Liam are growing up among green spaces, rivers, hills, and the kind of freedom that is often lost in rushed lives.",
+      p6: "This project is our way of sharing Minho from the inside: with simplicity, comfort, and honesty. More than accommodation, we wanted to create a place with soul, made for welcoming people and memories.",
+      sideTag: "Family project",
+      sideTitle: "What shapes the way we host",
+      sideIntro: "We bring together the best of two worlds: roots in Minho and many years of life in the Netherlands.",
+      point1: {
+        title: "Roots",
+        text: "Guimaraes and Minho are part of who we are and of the way we want to welcome people."
+      },
+      point2: {
+        title: "Two worlds",
+        text: "Our life between Portugal and the Netherlands shaped the way we see family, work, and hospitality."
+      },
+      point3: {
+        title: "Slower living",
+        text: "The bungalow was born from the wish to slow down and make more room for what truly matters."
+      },
+      point4: {
+        title: "Languages",
+        text: "We host in Portuguese, English, Dutch, Spanish, and Polish in a simple, personal, and genuine way."
+      }
     },
     gallery: {
       kicker: "Photo story",
@@ -194,7 +224,7 @@ const homeTranslations = {
   pt: {
     seo: {
       title: "Martins Bungalow Retreat | Estadias calmas perto de Guimaraes",
-      description: "Martins Bungalow Retreat e um bungalow com jardim perto de Guimaraes, pensado para descanso, reservas diretas e futuros artigos sobre a regiao."
+      description: "Martins Bungalow Retreat e um bungalow familiar perto de Guimaraes, pensado para descanso, reservas diretas e historias locais vividas por dentro."
     },
     nav: {
       home: "Inicio",
@@ -207,7 +237,7 @@ const homeTranslations = {
     hero: {
       eyebrow: "Bungalow boutique no Norte de Portugal",
       title: "Manhas lentas, caminhos de pedra e uma estadia perto de Guimaraes",
-      text: "Martins Bungalow Retreat foi pensado para viajantes que procuram calma no jardim, vida ao ar livre e acesso facil a historia, gastronomia e paisagens do Norte de Portugal.",
+      text: "Martins Bungalow Retreat e um bungalow familiar perto de Guimaraes, pensado para viajantes que procuram calma no jardim, vida ao ar livre e uma ligacao mais pessoal ao Norte de Portugal.",
       primaryCta: "Ver disponibilidade",
       secondaryCta: "Explorar o blog",
       figureAlt: "Fotografia do Martins Bungalow Retreat com bungalow, piscina e jardim",
@@ -257,6 +287,36 @@ const homeTranslations = {
       list2: "Conforto para escapadinhas curtas ou estadias mais demoradas",
       list3: "Acesso simples a Guimaraes, aldeias vizinhas e rotas panoramicas",
       list4: "Contacto direto para perguntas, planeamento e reserva"
+    },
+    about: {
+      kicker: "Sobre nos",
+      title: "Uma familia entre dois mundos, agora de volta as raizes",
+      intro: "Somos o Flavio, a Karolina, a Lara e o Liam, uma familia que acredita numa vida mais simples, mais proxima da natureza e mais ligada ao que realmente importa.",
+      p1: "O Flavio nasceu em Guimaraes e cresceu entre ruas com historia, granito, montanhas por perto e a forma minhota de viver. Aos 18 anos partiu para a Holanda com curiosidade, coragem e vontade de conhecer o mundo.",
+      p2: "O que comecou como uma aventura transformou-se em mais de 25 anos de vida na Holanda. Foi la que conhecemos outras formas de viver e trabalhar, que o Flavio encontrou a Karolina e que a nossa familia ganhou forma.",
+      p3: "Com o passar dos anos sentimos a necessidade de abrandar. Queriamos mais tempo em familia, mais espaco para respirar e dias com mais calma, mais presenca e mais verdade.",
+      p4: "Regressar a Portugal nao foi um recuo. Foi uma escolha consciente por uma vida mais proxima da terra, da familia e da autenticidade. Voltamos a Guimaraes e ao Minho para dar vida ao bungalow que hoje partilhamos com quem nos visita.",
+      p5: "Hoje vivemos esta fase a quatro, com a Lara e o Liam a crescer entre o verde, os rios, as serras e a liberdade que tantas vezes se perde nas vidas apressadas.",
+      p6: "Este projeto e a nossa forma de partilhar o Minho por dentro: com simplicidade, conforto e verdade. Mais do que um alojamento, quisemos criar um espaco com alma, feito para acolher pessoas e memorias.",
+      sideTag: "Projeto familiar",
+      sideTitle: "O que orienta a forma como recebemos",
+      sideIntro: "Trazemos connosco o melhor de dois mundos: as raizes do Minho e os anos vividos na Holanda.",
+      point1: {
+        title: "Raizes",
+        text: "Guimaraes e o Minho fazem parte de quem somos e da forma como queremos receber."
+      },
+      point2: {
+        title: "Dois mundos",
+        text: "A nossa vida entre Portugal e Holanda moldou a nossa visao de familia, trabalho e hospitalidade."
+      },
+      point3: {
+        title: "Vida mais lenta",
+        text: "O bungalow nasceu da vontade de abrandar e dar mais espaco ao que realmente importa."
+      },
+      point4: {
+        title: "Idiomas",
+        text: "Recebemos em portugues, ingles, holandes, espanhol e polaco, de forma simples, proxima e genuina."
+      }
     },
     gallery: {
       kicker: "Narrativa visual",
@@ -386,7 +446,7 @@ const homeTranslations = {
   es: {
     seo: {
       title: "Martins Bungalow Retreat | Estancias tranquilas cerca de Guimaraes",
-      description: "Martins Bungalow Retreat es un bungalow con jardin cerca de Guimaraes, pensado para descanso, reservas directas y futuros articulos sobre la zona."
+      description: "Martins Bungalow Retreat es un bungalow familiar cerca de Guimaraes con reserva directa, calma, jardin e historias locales del norte de Portugal."
     },
     nav: {
       home: "Inicio",
@@ -399,7 +459,7 @@ const homeTranslations = {
     hero: {
       eyebrow: "Bungalow boutique en el norte de Portugal",
       title: "Mananas lentas, caminos de piedra y una estancia cerca de Guimaraes",
-      text: "Martins Bungalow Retreat esta pensado para viajeros que buscan calma en el jardin, vida al aire libre y acceso facil a la historia, la gastronomia y los paisajes del norte de Portugal.",
+      text: "Martins Bungalow Retreat es un bungalow familiar cerca de Guimaraes, pensado para viajeros que buscan calma en el jardin, vida al aire libre y una conexion mas personal con el norte de Portugal.",
       primaryCta: "Ver disponibilidad",
       secondaryCta: "Explorar el blog",
       figureAlt: "Fotografia de Martins Bungalow Retreat con bungalow, piscina y jardin",
@@ -449,6 +509,36 @@ const homeTranslations = {
       list2: "Comodidad para escapadas cortas o estancias mas pausadas",
       list3: "Acceso facil a Guimaraes, pueblos cercanos y rutas panoramicas",
       list4: "Contacto directo para preguntas, planificacion y reserva"
+    },
+    about: {
+      kicker: "Sobre nosotros",
+      title: "Una familia entre dos mundos, ahora de vuelta a sus raices",
+      intro: "Somos Flavio, Karolina, Lara y Liam, una familia que cree en una vida mas simple, mas cercana a la naturaleza y mas unida a lo que de verdad importa.",
+      p1: "Flavio nacio en Guimaraes y crecio entre calles con historia, granito, montanas cercanas y la forma minhota de vivir. A los 18 anos se fue a los Paises Bajos con curiosidad, valentia y ganas de conocer el mundo.",
+      p2: "Lo que empezo como una aventura se convirtio en mas de 25 anos de vida en los Paises Bajos. Alli descubrimos otras formas de vivir y trabajar, fue donde Flavio conocio a Karolina y donde nuestra familia empezo a tomar forma.",
+      p3: "Con el paso de los anos sentimos la necesidad de bajar el ritmo. Queriamos mas tiempo en familia, mas espacio para respirar y dias con mas calma, mas presencia y mas verdad.",
+      p4: "Volver a Portugal no fue un paso atras. Fue una decision consciente por una vida mas cercana a la tierra, a la familia y a la autenticidad. Volvimos a Guimaraes y al Minho para dar vida al bungalow que hoy compartimos con nuestros huespedes.",
+      p5: "Hoy vivimos esta etapa los cuatro, con Lara y Liam creciendo entre zonas verdes, rios, sierras y la libertad que muchas veces se pierde en vidas demasiado rapidas.",
+      p6: "Este proyecto es nuestra manera de compartir el Minho desde dentro: con sencillez, comodidad y honestidad. Mas que un alojamiento, queriamos crear un lugar con alma, hecho para acoger personas y recuerdos.",
+      sideTag: "Proyecto familiar",
+      sideTitle: "Lo que da forma a nuestra manera de recibir",
+      sideIntro: "Reunimos lo mejor de dos mundos: las raices del Minho y muchos anos de vida en los Paises Bajos.",
+      point1: {
+        title: "Raices",
+        text: "Guimaraes y el Minho forman parte de quienes somos y de como queremos recibir."
+      },
+      point2: {
+        title: "Dos mundos",
+        text: "Nuestra vida entre Portugal y los Paises Bajos moldeo nuestra forma de entender la familia, el trabajo y la hospitalidad."
+      },
+      point3: {
+        title: "Vida mas lenta",
+        text: "El bungalow nacio del deseo de bajar el ritmo y dejar mas espacio a lo que realmente importa."
+      },
+      point4: {
+        title: "Idiomas",
+        text: "Recibimos en portugues, ingles, neerlandes, espanol y polaco de una forma simple, cercana y genuina."
+      }
     },
     gallery: {
       kicker: "Historia visual",
@@ -578,7 +668,7 @@ const homeTranslations = {
   nl: {
     seo: {
       title: "Martins Bungalow Retreat | Rustige verblijven bij Guimaraes",
-      description: "Martins Bungalow Retreat is een bungalow met tuin bij Guimaraes, gemaakt voor rust, directe boekingen en toekomstige verhalen over de streek."
+      description: "Martins Bungalow Retreat is een familiebungalow bij Guimaraes met direct boeken, tuinrust en lokale verhalen uit Noord-Portugal."
     },
     nav: {
       home: "Home",
@@ -591,7 +681,7 @@ const homeTranslations = {
     hero: {
       eyebrow: "Boutique bungalow in Noord-Portugal",
       title: "Langzame ochtenden, stenen paden en een verblijf bij Guimaraes",
-      text: "Martins Bungalow Retreat is gemaakt voor reizigers die tuinrust, buitenleven en gemakkelijke toegang tot de geschiedenis, gastronomie en landschappen van Noord-Portugal zoeken.",
+      text: "Martins Bungalow Retreat is een familiebungalow bij Guimaraes voor reizigers die tuinrust, buitenleven en een persoonlijkere band met Noord-Portugal zoeken.",
       primaryCta: "Beschikbaarheid",
       secondaryCta: "Ontdek de blog",
       figureAlt: "Foto van Martins Bungalow Retreat met bungalow, zwembad en tuin",
@@ -641,6 +731,36 @@ const homeTranslations = {
       list2: "Comfort voor korte breaks of langere, rustigere verblijven",
       list3: "Vlotte toegang tot Guimaraes, nabije dorpen en mooie routes",
       list4: "Direct contact voor vragen, planning en boeking"
+    },
+    about: {
+      kicker: "Over ons",
+      title: "Een familie tussen twee werelden, nu weer terug bij de roots",
+      intro: "Wij zijn Flavio, Karolina, Lara en Liam, een familie die gelooft in een eenvoudiger leven, dichter bij de natuur en dichter bij wat echt belangrijk is.",
+      p1: "Flavio is geboren in Guimaraes en groeide op tussen historische straten, graniet, bergen in de buurt en de Minho-manier van leven. Op zijn 18e vertrok hij naar Nederland met nieuwsgierigheid, moed en de wens om de wereld te leren kennen.",
+      p2: "Wat als een avontuur begon, werd meer dan 25 jaar leven in Nederland. Daar leerden we andere manieren van leven en werken kennen, ontmoette Flavio Karolina en kreeg ons gezin echt vorm.",
+      p3: "Na verloop van tijd voelden we de behoefte om te vertragen. We wilden meer tijd als familie, meer ruimte om adem te halen en dagen met meer rust, meer aanwezigheid en meer echtheid.",
+      p4: "Terugkeren naar Portugal was geen stap terug. Het was een bewuste keuze voor een leven dichter bij de aarde, bij familie en bij authenticiteit. We kwamen terug naar Guimaraes en Minho om de bungalow te bouwen die we nu met onze gasten delen.",
+      p5: "Vandaag beleven we deze fase met zijn vieren, terwijl Lara en Liam opgroeien tussen het groen, rivieren, heuvels en de vrijheid die in een gejaagd leven zo vaak verloren gaat.",
+      p6: "Dit project is onze manier om Minho van binnenuit te delen: eenvoudig, warm en eerlijk. Meer dan een verblijf wilden we een plek met ziel maken, bedoeld om mensen en herinneringen te ontvangen.",
+      sideTag: "Familieproject",
+      sideTitle: "Wat onze manier van ontvangen vormt",
+      sideIntro: "We brengen het beste van twee werelden samen: wortels in Minho en vele jaren leven in Nederland.",
+      point1: {
+        title: "Wortels",
+        text: "Guimaraes en Minho maken deel uit van wie we zijn en van de manier waarop we mensen willen ontvangen."
+      },
+      point2: {
+        title: "Twee werelden",
+        text: "Ons leven tussen Portugal en Nederland heeft gevormd hoe we naar familie, werk en gastvrijheid kijken."
+      },
+      point3: {
+        title: "Langzamer leven",
+        text: "De bungalow ontstond uit de wens om te vertragen en meer ruimte te maken voor wat echt telt."
+      },
+      point4: {
+        title: "Talen",
+        text: "We ontvangen gasten in het Portugees, Engels, Nederlands, Spaans en Pools op een eenvoudige, persoonlijke en oprechte manier."
+      }
     },
     gallery: {
       kicker: "Visueel verhaal",

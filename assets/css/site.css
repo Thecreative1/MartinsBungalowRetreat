@@ -315,16 +315,73 @@ a:focus-visible {
   gap: 24px;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 24px;
+}
+
 .prose-card,
 .checklist-card,
 .contact-card {
   padding: 28px;
 }
 
+.about-copy,
+.about-side {
+  padding: 30px;
+}
+
 .prose-card p,
 .article-content p,
 .article-content li {
   color: var(--muted);
+}
+
+.about-copy {
+  display: grid;
+  gap: 16px;
+}
+
+.about-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.about-side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.about-side h3,
+.about-point h4 {
+  margin: 0;
+  font-family: var(--heading-font);
+  color: var(--pine-900);
+}
+
+.about-side__intro,
+.about-point p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.about-points {
+  display: grid;
+  gap: 14px;
+}
+
+.about-point {
+  display: grid;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.about-point:first-child {
+  padding-top: 0;
+  border-top: 0;
 }
 
 .checklist {
@@ -711,6 +768,7 @@ a:focus-visible {
 
   .site-header__inner,
   .page-hero,
+  .about-layout,
   .split-layout,
   .contact-layout,
   .section-heading--with-link,
