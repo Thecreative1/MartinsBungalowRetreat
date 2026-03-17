@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Terrace illustration</title>
+  <desc id="desc">Abstract terrace scene with seating, striped light, and a bungalow wall.</desc>
+  <rect width="1200" height="900" fill="#f9f5ef"/>
+  <rect x="0" y="0" width="1200" height="380" fill="#eadfcb"/>
+  <rect x="780" y="160" width="330" height="390" fill="#efe5d5"/>
+  <rect x="820" y="220" width="86" height="160" fill="#345844" opacity="0.78"/>
+  <rect x="955" y="220" width="106" height="210" fill="#345844" opacity="0.78"/>
+  <path d="M0 520 L1200 400 L1200 900 L0 900 Z" fill="#d7c2a1"/>
+  <path d="M0 690 L1200 520 L1200 900 L0 900 Z" fill="#bf9865"/>
+  <rect x="220" y="450" width="260" height="32" rx="12" fill="#345844"/>
+  <rect x="250" y="480" width="24" height="140" fill="#345844"/>
+  <rect x="425" y="480" width="24" height="140" fill="#345844"/>
+  <rect x="580" y="510" width="150" height="150" rx="20" fill="#6f846d"/>
+  <rect x="760" y="500" width="150" height="160" rx="20" fill="#7f9a80"/>
+  <text x="86" y="820" fill="#20372a" font-size="52" font-family="Palatino Linotype, Georgia, serif">Terrace corners</text>
+</svg>

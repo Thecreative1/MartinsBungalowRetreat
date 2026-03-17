@@ -3,958 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martins Bungalow Retreat - Your escape in the cradle of Portugal</title>
+  <title>Martins Bungalow Retreat | Slow stays near Guimaraes</title>
   <meta
     name="description"
-    content="Unique bungalow retreat in the heart of Northern Portugal. Book direct for the best price. Multilingual service in English, Portuguese, Dutch and Spanish."
+    content="Martins Bungalow Retreat is a garden bungalow stay near Guimaraes with space for slow travel, direct booking, and future destination stories."
   >
-  <meta name="theme-color" content="#38704a">
-  <style>
-    :root {
-      --forest: #38704a;
-      --forest-dark: #244a31;
-      --sand: #f5f5f2;
-      --card: rgba(255, 255, 255, 0.96);
-      --text: #212121;
-      --muted: #5f675f;
-      --accent: #ffd700;
-      --shadow: 0 18px 40px rgba(36, 74, 49, 0.12);
-      --radius: 20px;
-      --header-height: 88px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top, rgba(255, 215, 0, 0.18), transparent 28%),
-        linear-gradient(180deg, #f8f7f1 0%, var(--sand) 100%);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    button,
-    a {
-      transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background-color 0.2s ease;
-    }
-
-    button:focus-visible,
-    a:focus-visible {
-      outline: 3px solid rgba(255, 215, 0, 0.65);
-      outline-offset: 3px;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 18px 32px;
-      min-height: var(--header-height);
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(56, 112, 74, 0.14);
-    }
-
-    .logo {
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: var(--forest);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #2d2d2d;
-      font-weight: 600;
-      padding: 6px 0;
-    }
-
-    nav a:hover {
-      color: var(--forest);
-    }
-
-    .lang-select {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .lang-select button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border: 1px solid rgba(56, 112, 74, 0.18);
-      border-radius: 999px;
-      background: #fff;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(36, 74, 49, 0.08);
-    }
-
-    .lang-select button[aria-pressed="true"] {
-      border-color: var(--forest);
-      background: #eef5ef;
-      box-shadow: 0 0 0 3px rgba(56, 112, 74, 0.12);
-    }
-
-    .hero {
-      min-height: calc(100vh - var(--header-height));
-      padding: 48px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background:
-        linear-gradient(rgba(23, 44, 30, 0.38), rgba(23, 44, 30, 0.5)),
-        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80") center/cover;
-      color: #fff;
-    }
-
-    .hero-content {
-      width: min(100%, 720px);
-      padding: 36px 32px;
-      text-align: center;
-      border-radius: 28px;
-      background: linear-gradient(180deg, rgba(56, 112, 74, 0.9), rgba(36, 74, 49, 0.92));
-      box-shadow: var(--shadow);
-    }
-
-    .eyebrow {
-      margin: 0 0 10px;
-      font-size: 0.9rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 4vw, 3.6rem);
-      line-height: 1.1;
-    }
-
-    .hero p {
-      margin: 18px auto 32px;
-      max-width: 58ch;
-      font-size: 1.08rem;
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    .cta {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .cta-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 176px;
-      padding: 14px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-    }
-
-    .cta-link.primary {
-      background: var(--accent);
-      color: #1d1d1d;
-    }
-
-    .cta-link.secondary {
-      background: rgba(255, 255, 255, 0.96);
-      color: var(--forest);
-      border: 2px solid rgba(255, 255, 255, 0.7);
-    }
-
-    .cta-link:hover,
-    .lang-select button:hover {
-      transform: translateY(-2px);
-    }
-
-    main {
-      padding-bottom: 40px;
-    }
-
-    .section {
-      width: min(100% - 32px, 1120px);
-      margin: 0 auto;
-      padding: 72px 0 0;
-      scroll-margin-top: calc(var(--header-height) + 16px);
-    }
-
-    .section-header {
-      margin-bottom: 24px;
-    }
-
-    .section-kicker {
-      margin: 0 0 8px;
-      font-size: 0.84rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--forest);
-    }
-
-    .section h2 {
-      margin: 0;
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
-      color: var(--forest);
-    }
-
-    .section-intro {
-      margin: 10px 0 0;
-      max-width: 70ch;
-      color: var(--muted);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .feature,
-    .review {
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 24px;
-    }
-
-    .feature {
-      min-height: 136px;
-      border: 1px solid rgba(56, 112, 74, 0.08);
-    }
-
-    .feature strong {
-      display: block;
-      margin-bottom: 10px;
-      color: var(--forest-dark);
-      font-size: 1.03rem;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-    }
-
-    .gallery-card {
-      overflow: hidden;
-      border-radius: var(--radius);
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-    }
-
-    .gallery-card figcaption {
-      padding: 14px 16px 18px;
-      font-weight: 600;
-      color: var(--forest-dark);
-    }
-
-    .experiences-list {
-      display: grid;
-      gap: 14px;
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    .reviews {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .review {
-      font-style: italic;
-      color: #314132;
-    }
-
-    .contact-card {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 20px;
-      align-items: stretch;
-    }
-
-    .contact-panel,
-    .map-panel {
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 24px;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 18px 0 12px;
-    }
-
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      color: var(--forest);
-      background: #eef5ef;
-    }
-
-    .contact-link:hover,
-    .cta-link:hover {
-      box-shadow: 0 10px 20px rgba(36, 74, 49, 0.16);
-    }
-
-    .address {
-      margin: 0;
-      color: var(--muted);
-      font-weight: 600;
-    }
-
-    iframe {
-      width: 100%;
-      min-height: 280px;
-      border: 0;
-      border-radius: 16px;
-    }
-
-    footer {
-      margin-top: 64px;
-      padding: 28px 20px 36px;
-      text-align: center;
-      background: #2e3830;
-      color: #fff;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    footer a:hover {
-      color: #fff6b3;
-    }
-
-    @media (max-width: 900px) {
-      header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 16px 20px;
-      }
-
-      .logo {
-        text-align: center;
-      }
-
-      nav,
-      .lang-select {
-        justify-content: center;
-      }
-
-      .contact-card {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      :root {
-        --header-height: 140px;
-      }
-
-      .hero {
-        min-height: auto;
-        padding-top: 36px;
-      }
-
-      .hero-content {
-        padding: 28px 22px;
-      }
-
-      .cta-link,
-      .contact-link {
-        width: 100%;
-      }
-
-      .section {
-        width: min(100% - 20px, 1120px);
-        padding-top: 56px;
-      }
-
-      .gallery-card img {
-        height: 200px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      button,
-      a {
-        transition: none;
-      }
-    }
-  </style>
+  <meta name="theme-color" content="#345844">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body id="top">
-  <header>
-    <a class="logo" href="#top" aria-label="Martins Bungalow Retreat">Martins Bungalow Retreat</a>
-    <nav aria-label="Primary">
-      <a href="#top" id="nav-home">Home</a>
-      <a href="#features" id="nav-features">Features</a>
-      <a href="#gallery" id="nav-gallery">Gallery</a>
-      <a href="#experiences" id="nav-experiences">Experiences</a>
-      <a href="#reviews" id="nav-reviews">Reviews</a>
-      <a href="#contact" id="nav-contact">Contact</a>
-    </nav>
-    <div class="lang-select" role="group" aria-label="Language selector">
-      <button type="button" data-lang="en" aria-label="English">
-        <img src="https://flagcdn.com/gb.svg" alt="" width="22" height="16">
-      </button>
-      <button type="button" data-lang="pt" aria-label="Português">
-        <img src="https://flagcdn.com/pt.svg" alt="" width="22" height="16">
-      </button>
-      <button type="button" data-lang="es" aria-label="Español">
-        <img src="https://flagcdn.com/es.svg" alt="" width="22" height="16">
-      </button>
-      <button type="button" data-lang="nl" aria-label="Nederlands">
-        <img src="https://flagcdn.com/nl.svg" alt="" width="22" height="16">
-      </button>
+<body class="page page--home" data-page="home" id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="#top">Martins Bungalow Retreat</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#stay" data-i18n="nav.stay">Stay</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#region" data-i18n="nav.region">Region</a>
+        <a href="blog/index.html" data-i18n="nav.journal">Journal</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="language-switcher" role="group" aria-label="Language selector">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="nl" aria-pressed="false">NL</button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="slogan">
-      <div class="hero-content">
-        <p class="eyebrow" id="hero-eyebrow">Northern Portugal retreat</p>
-        <h1 id="slogan">Your escape in the cradle of Portugal</h1>
-        <p id="hero-text">Discover a unique holiday experience surrounded by nature, tradition, and the authentic beauty of Northern Portugal.</p>
-        <div class="cta">
-          <a class="cta-link primary" href="#contact" id="book-btn">Book Now</a>
-          <a class="cta-link secondary" href="#gallery" id="gallery-btn">Gallery</a>
+  <main class="site-main">
+    <section class="page-hero page-hero--home">
+      <div class="page-hero__content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Boutique bungalow in Northern Portugal</p>
+        <h1 data-i18n="hero.title">Slow mornings, stone paths, and a stay near Guimaraes</h1>
+        <p class="lede" data-i18n="hero.text">
+          Martins Bungalow Retreat is designed for travellers who want garden calm, flexible outdoor living, and easy access to the history, food, and landscapes of Northern Portugal.
+        </p>
+        <div class="button-row">
+          <a class="button button--primary" href="#contact" data-i18n="hero.primaryCta">Check availability</a>
+          <a class="button button--ghost" href="blog/index.html" data-i18n="hero.secondaryCta">Explore the journal</a>
+        </div>
+        <div class="facts-grid" aria-label="Highlights">
+          <article class="fact-card">
+            <p class="fact-card__value">4-6</p>
+            <p class="fact-card__label" data-i18n="facts.sleep">Guests</p>
+          </article>
+          <article class="fact-card">
+            <p class="fact-card__value" data-i18n="facts.poolValue">Pool</p>
+            <p class="fact-card__label" data-i18n="facts.pool">Sun terrace</p>
+          </article>
+          <article class="fact-card">
+            <p class="fact-card__value" data-i18n="facts.workValue">Wi-Fi</p>
+            <p class="fact-card__label" data-i18n="facts.work">Parking included</p>
+          </article>
+          <article class="fact-card">
+            <p class="fact-card__value">15 min</p>
+            <p class="fact-card__label" data-i18n="facts.location">to Guimaraes</p>
+          </article>
         </div>
       </div>
+      <figure class="hero-visual card">
+        <img
+          src="assets/images/placeholders/hero-stay.svg"
+          alt="Illustrated exterior view of Martins Bungalow Retreat"
+          width="1600"
+          height="1200"
+          loading="eager"
+          data-i18n-attr="alt:hero.figureAlt"
+        >
+        <figcaption data-i18n="hero.figureCaption">Garden calm, outdoor light, and the rhythm of slow travel.</figcaption>
+      </figure>
     </section>
 
-    <section class="section" id="features" aria-labelledby="features-title">
-      <div class="section-header">
-        <p class="section-kicker" id="features-kicker">Stay with character</p>
-        <h2 id="features-title">Why Choose Us?</h2>
-        <p class="section-intro" id="features-intro">Comfort, privacy and a location that makes slow travel feel effortless.</p>
+    <section class="section" id="stay">
+      <div class="section-heading">
+        <p class="section-heading__kicker" data-i18n="stay.kicker">Stay with character</p>
+        <h2 data-i18n="stay.title">A calm base for couples, families, and longer escapes</h2>
+        <p class="section-heading__intro" data-i18n="stay.intro">
+          Quiet mornings, outdoor living, and easy access to Guimaraes make the stay feel relaxed from the start.
+        </p>
       </div>
-      <div class="features">
-        <article class="feature">
-          <strong id="f1-title">Rustic atmosphere</strong>
-          <span id="f1">Rustic garden and sweeping nature views for quiet mornings.</span>
+      <div class="split-layout">
+        <article class="card prose-card">
+          <p data-i18n="stay.paragraph1">
+            Wake up to garden views, spend unhurried mornings outside, and enjoy a setting that makes it easy to alternate between rest and day trips.
+          </p>
+          <p data-i18n="stay.paragraph2">
+            Whether you are planning a family break, a couples escape, or a longer stay in Northern Portugal, the bungalow is designed to feel practical, private, and warm.
+          </p>
         </article>
-        <article class="feature">
-          <strong id="f2-title">Outdoor comfort</strong>
-          <span id="f2">Pool area and sunny terrace designed for laid-back afternoons.</span>
-        </article>
-        <article class="feature">
-          <strong id="f3-title">Peaceful privacy</strong>
-          <span id="f3">A private, peaceful setting that works well for families.</span>
-        </article>
-        <article class="feature">
-          <strong id="f4-title">Easy practicalities</strong>
-          <span id="f4">Fast Wi-Fi and free parking so the stay remains stress free.</span>
-        </article>
-        <article class="feature">
-          <strong id="f5-title">Excellent base</strong>
-          <span id="f5">Minutes from historic Guimaraes and the best regional day trips.</span>
-        </article>
+        <aside class="card checklist-card">
+          <h3 data-i18n="stay.listTitle">What guests can expect</h3>
+          <ul class="checklist">
+            <li data-i18n="stay.list1">Dedicated outdoor spaces for breakfast, reading, and evenings outside</li>
+            <li data-i18n="stay.list2">Comfortable conditions for short breaks or slower, longer stays</li>
+            <li data-i18n="stay.list3">Easy access to Guimaraes, nearby villages, and scenic routes</li>
+            <li data-i18n="stay.list4">Direct contact for questions, planning, and booking</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <section class="section" id="gallery" aria-labelledby="gallery-title">
-      <div class="section-header">
-        <p class="section-kicker" id="gallery-kicker">Take a look</p>
-        <h2 id="gallery-title">Gallery</h2>
-        <p class="section-intro" id="gallery-intro">A quick preview of the mood, the spaces and the surrounding landscape.</p>
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="section-heading__kicker" data-i18n="gallery.kicker">Photo story</p>
+        <h2 data-i18n="gallery.title">A first look at the spaces and the setting</h2>
+        <p class="section-heading__intro" data-i18n="gallery.intro">
+          A preview of the atmosphere around the bungalow, from garden corners to poolside afternoons and nearby landscapes.
+        </p>
       </div>
       <div class="gallery-grid">
-        <figure class="gallery-card">
+        <figure class="photo-card">
           <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-            alt="Rustic garden with mountain backdrop"
-            width="800"
-            height="600"
+            src="assets/images/placeholders/gallery-garden.svg"
+            alt="Illustrated garden scene at the bungalow"
+            width="1200"
+            height="900"
             loading="lazy"
+            data-i18n-attr="alt:gallery.alt1"
           >
-          <figcaption id="g1">Garden views and peaceful mornings</figcaption>
+          <figcaption data-i18n="gallery.caption1">Garden sunrise and breakfast seating</figcaption>
         </figure>
-        <figure class="gallery-card">
+        <figure class="photo-card">
           <img
-            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
-            alt="Terrace outside the bungalow"
-            width="800"
-            height="600"
+            src="assets/images/placeholders/gallery-terrace.svg"
+            alt="Illustrated bungalow terrace"
+            width="1200"
+            height="900"
             loading="lazy"
+            data-i18n-attr="alt:gallery.alt2"
           >
-          <figcaption id="g2">Bungalow terrace for long summer evenings</figcaption>
+          <figcaption data-i18n="gallery.caption2">Terrace corners for slow afternoons</figcaption>
         </figure>
-        <figure class="gallery-card">
+        <figure class="photo-card">
           <img
-            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
-            alt="Outdoor swimming pool"
-            width="800"
-            height="600"
+            src="assets/images/placeholders/gallery-pool.svg"
+            alt="Illustrated pool deck"
+            width="1200"
+            height="900"
             loading="lazy"
+            data-i18n-attr="alt:gallery.alt3"
           >
-          <figcaption id="g3">Refreshing pool area with sun all day</figcaption>
+          <figcaption data-i18n="gallery.caption3">Poolside moments and open skies</figcaption>
         </figure>
-        <figure class="gallery-card">
+        <figure class="photo-card">
           <img
-            src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=800&q=80"
-            alt="Green nature landscape near the retreat"
-            width="800"
-            height="600"
+            src="assets/images/placeholders/gallery-region.svg"
+            alt="Illustrated Northern Portugal hills"
+            width="1200"
+            height="900"
             loading="lazy"
+            data-i18n-attr="alt:gallery.alt4"
           >
-          <figcaption id="g4">Northern Portugal landscapes right nearby</figcaption>
+          <figcaption data-i18n="gallery.caption4">Nearby landscapes, trails, and stone villages</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" id="experiences" aria-labelledby="experiences-title">
-      <div class="section-header">
-        <p class="section-kicker" id="experiences-kicker">Explore more</p>
-        <h2 id="experiences-title">Experiences and Region</h2>
-        <p class="section-intro" id="experiences-intro">The bungalow sits close to heritage, food and outdoor routes that make the stay feel local.</p>
+    <section class="section" id="region">
+      <div class="section-heading">
+        <p class="section-heading__kicker" data-i18n="region.kicker">Beyond the bungalow</p>
+        <h2 data-i18n="region.title">Explore the region as slowly or actively as you like</h2>
+        <p class="section-heading__intro" data-i18n="region.intro">
+          Martins Bungalow Retreat works well as a base for heritage visits, local food discoveries, and open-air day trips.
+        </p>
       </div>
-      <ul class="experiences-list">
-        <li id="exp1">Discover wine routes, hiking trails and medieval castles.</li>
-        <li id="exp2">Enjoy authentic Portuguese gastronomy nearby.</li>
-        <li id="exp3">Plan easy day trips through villages, markets and riverside viewpoints.</li>
-      </ul>
+      <div class="card-grid">
+        <article class="card highlight-card">
+          <span class="tag" data-i18n="region.card1.tag">Heritage</span>
+          <h3 data-i18n="region.card1.title">Historic Guimaraes days</h3>
+          <p data-i18n="region.card1.text">
+            Walk the old centre, castle viewpoints, and shaded streets that make easy half-day plans for guests.
+          </p>
+        </article>
+        <article class="card highlight-card">
+          <span class="tag" data-i18n="region.card2.tag">Food and wine</span>
+          <h3 data-i18n="region.card2.title">Regional dining and local produce</h3>
+          <p data-i18n="region.card2.text">
+            Give visitors reasons to book by spotlighting bakeries, markets, vineyards, and relaxed dinner spots.
+          </p>
+        </article>
+        <article class="card highlight-card">
+          <span class="tag" data-i18n="region.card3.tag">Outdoors</span>
+          <h3 data-i18n="region.card3.title">Trails, river views, and day trips</h3>
+          <p data-i18n="region.card3.text">
+            Hiking routes, picnic stops, and scenic drives help position the bungalow as a practical base for exploring.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="section" id="reviews" aria-labelledby="reviews-title">
-      <div class="section-header">
-        <p class="section-kicker" id="reviews-kicker">Guests first</p>
-        <h2 id="reviews-title">Guest Reviews</h2>
-      </div>
-      <div class="reviews">
-        <blockquote class="review" id="r1">"Absolutely loved the garden and peaceful surroundings." - Anne (NL)</blockquote>
-        <blockquote class="review" id="r2">"Perfect getaway for our family. We will come back." - Marta (ES)</blockquote>
-        <blockquote class="review" id="r3">"The best hosts and a beautiful bungalow." - Tomas (PT)</blockquote>
-      </div>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="section-header">
-        <p class="section-kicker" id="contact-kicker">Plan your stay</p>
-        <h2 id="contact-title">Contact and Location</h2>
-        <p class="section-intro" id="contact-txt">Any questions? Reach out by WhatsApp or email, and use the map below to find the retreat.</p>
-      </div>
-      <div class="contact-card">
-        <div class="contact-panel">
-          <div class="contact-links">
-            <a class="contact-link" href="mailto:info@martinsbungalow.com" id="email-link">Email us</a>
-            <a class="contact-link" href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer" id="whatsapp-link">WhatsApp</a>
-          </div>
-          <p class="address" id="address">Rua do Paraiso 123, Guimaraes, Portugal</p>
+    <section class="section" id="journal">
+      <div class="section-heading section-heading--with-link">
+        <div>
+          <p class="section-heading__kicker" data-i18n="journal.kicker">Journal and blog</p>
+          <h2 data-i18n="journal.title">Stories, guides, and seasonal notes from the region</h2>
+          <p class="section-heading__intro" data-i18n="journal.intro">
+            Read about the stay, discover local ideas, and start planning the kind of trip that fits this slower corner of Portugal.
+          </p>
         </div>
-        <div class="map-panel">
+        <a class="text-link" href="blog/index.html" data-i18n="journal.link">View all articles</a>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <img
+            src="assets/images/placeholders/blog-welcome.svg"
+            alt="Illustration for welcome article"
+            width="1200"
+            height="900"
+            loading="lazy"
+          >
+          <div class="story-card__body">
+            <span class="tag" data-i18n="journal.story1.tag">Stay story</span>
+            <h3 data-i18n="journal.story1.title">Welcome to Martins Bungalow Retreat</h3>
+            <p data-i18n="journal.story1.text">
+              A first post that introduces the property, the mood of the stay, and what guests can expect.
+            </p>
+            <a class="story-link" href="blog/posts/welcome-to-martins-bungalow-retreat.html" data-i18n="journal.readMore">Read article</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="assets/images/placeholders/blog-guimaraes.svg"
+            alt="Illustration for Guimaraes guide"
+            width="1200"
+            height="900"
+            loading="lazy"
+          >
+          <div class="story-card__body">
+            <span class="tag" data-i18n="journal.story2.tag">Destination guide</span>
+            <h3 data-i18n="journal.story2.title">A relaxed weekend in Guimaraes</h3>
+            <p data-i18n="journal.story2.text">
+              A reusable example of the kind of local guide that supports bookings and search traffic.
+            </p>
+            <a class="story-link" href="blog/posts/guide-to-guimaraes-weekend.html" data-i18n="journal.readMore">Read article</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="assets/images/placeholders/blog-food.svg"
+            alt="Illustration for food guide"
+            width="1200"
+            height="900"
+            loading="lazy"
+          >
+          <div class="story-card__body">
+            <span class="tag" data-i18n="journal.story3.tag">Food guide</span>
+            <h3 data-i18n="journal.story3.title">What to taste in Northern Portugal</h3>
+            <p data-i18n="journal.story3.text">
+              Another starter article that can grow into a useful blog category for future visitors.
+            </p>
+            <a class="story-link" href="blog/posts/northern-portugal-food-guide.html" data-i18n="journal.readMore">Read article</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <p class="section-heading__kicker" data-i18n="contact.kicker">Plan the stay</p>
+        <h2 data-i18n="contact.title">Contact details, map, and direct booking path</h2>
+        <p class="section-heading__intro" data-i18n="contact.intro">
+          Reach out directly for questions, availability, and local planning before your stay.
+        </p>
+      </div>
+      <div class="contact-layout">
+        <article class="card contact-card">
+          <dl class="contact-list">
+            <div>
+              <dt data-i18n="contact.emailLabel">Email</dt>
+              <dd><a href="mailto:info@martinsbungalow.com">info@martinsbungalow.com</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.whatsappLabel">WhatsApp</dt>
+              <dd><a href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer">+351 912 345 678</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.addressLabel">Address</dt>
+              <dd data-i18n="contact.address">Rua do Paraiso 123, Guimaraes, Portugal</dd>
+            </div>
+          </dl>
+          <div class="button-row button-row--start">
+            <a class="button button--primary" href="mailto:info@martinsbungalow.com" data-i18n="contact.emailCta">Email us</a>
+            <a class="button button--ghost" href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsappCta">Message on WhatsApp</a>
+          </div>
+        </article>
+        <div class="card map-card">
           <iframe
-            src="https://maps.google.com/maps?q=Guimaraes&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Guimaraes&t=&z=13&ie=UTF8&iwloc=&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen
-            title="Martins Bungalow Retreat location map"
+            title="Map showing Martins Bungalow Retreat near Guimaraes"
+            data-i18n-attr="title:contact.mapTitle"
           ></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p id="footer-text">Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat</p>
-    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" id="instagram-link">Instagram</a>
+  <footer class="site-footer">
+    <p data-i18n="footer.text">Made for slow stays, direct bookings, and future storytelling.</p>
+    <p>&copy; <span data-current-year></span> Martins Bungalow Retreat</p>
   </footer>
 
-  <script>
-    const translations = {
-      en: {
-        pageTitle: "Martins Bungalow Retreat - Your escape in the cradle of Portugal",
-        pageDescription: "Unique bungalow retreat in the heart of Northern Portugal. Book direct for the best price. Multilingual service in English, Portuguese, Dutch and Spanish.",
-        heroEyebrow: "Northern Portugal retreat",
-        slogan: "Your escape in the cradle of Portugal",
-        heroText: "Discover a unique holiday experience surrounded by nature, tradition, and the authentic beauty of Northern Portugal.",
-        book: "Book Now",
-        gallery: "Gallery",
-        navHome: "Home",
-        navFeatures: "Features",
-        navGallery: "Gallery",
-        navExperiences: "Experiences",
-        navReviews: "Reviews",
-        navContact: "Contact",
-        featuresKicker: "Stay with character",
-        features: "Why Choose Us?",
-        featuresIntro: "Comfort, privacy and a location that makes slow travel feel effortless.",
-        f1Title: "Rustic atmosphere",
-        f1: "Rustic garden and sweeping nature views for quiet mornings.",
-        f2Title: "Outdoor comfort",
-        f2: "Pool area and sunny terrace designed for laid-back afternoons.",
-        f3Title: "Peaceful privacy",
-        f3: "A private, peaceful setting that works well for families.",
-        f4Title: "Easy practicalities",
-        f4: "Fast Wi-Fi and free parking so the stay remains stress free.",
-        f5Title: "Excellent base",
-        f5: "Minutes from historic Guimaraes and the best regional day trips.",
-        galleryKicker: "Take a look",
-        galleryTitle: "Gallery",
-        galleryIntro: "A quick preview of the mood, the spaces and the surrounding landscape.",
-        g1: "Garden views and peaceful mornings",
-        g2: "Bungalow terrace for long summer evenings",
-        g3: "Refreshing pool area with sun all day",
-        g4: "Northern Portugal landscapes right nearby",
-        experiencesKicker: "Explore more",
-        experiences: "Experiences and Region",
-        experiencesIntro: "The bungalow sits close to heritage, food and outdoor routes that make the stay feel local.",
-        exp1: "Discover wine routes, hiking trails and medieval castles.",
-        exp2: "Enjoy authentic Portuguese gastronomy nearby.",
-        exp3: "Plan easy day trips through villages, markets and riverside viewpoints.",
-        reviewsKicker: "Guests first",
-        reviews: "Guest Reviews",
-        r1: "\"Absolutely loved the garden and peaceful surroundings.\" - Anne (NL)",
-        r2: "\"Perfect getaway for our family. We will come back.\" - Marta (ES)",
-        r3: "\"The best hosts and a beautiful bungalow.\" - Tomas (PT)",
-        contactKicker: "Plan your stay",
-        contact: "Contact and Location",
-        contactTxt: "Any questions? Reach out by WhatsApp or email, and use the map below to find the retreat.",
-        email: "Email us",
-        whatsapp: "WhatsApp",
-        address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat",
-        mapTitle: "Martins Bungalow Retreat location map"
-      },
-      pt: {
-        pageTitle: "Martins Bungalow Retreat - O seu refugio no berco de Portugal",
-        pageDescription: "Bungalow de charme no coracao do Norte de Portugal. Reserve diretamente pelo melhor preco. Atendimento em portugues, ingles, neerlandes e espanhol.",
-        heroEyebrow: "Refugio no Norte de Portugal",
-        slogan: "O seu refugio no berco de Portugal",
-        heroText: "Viva uma experiencia unica de descanso, rodeado pela natureza, tradicoes e a beleza genuina do Norte de Portugal.",
-        book: "Reservar Agora",
-        gallery: "Galeria",
-        navHome: "Inicio",
-        navFeatures: "Destaques",
-        navGallery: "Galeria",
-        navExperiences: "Experiencias",
-        navReviews: "Testemunhos",
-        navContact: "Contacto",
-        featuresKicker: "Estadia com identidade",
-        features: "Porque escolher-nos?",
-        featuresIntro: "Conforto, privacidade e uma localizacao que torna a viagem mais leve e memoravel.",
-        f1Title: "Ambiente rustico",
-        f1: "Jardim rustico e vistas amplas para a natureza, ideais para manhas tranquilas.",
-        f2Title: "Conforto ao ar livre",
-        f2: "Piscina e terraco solarengo pensados para tardes relaxadas.",
-        f3Title: "Privacidade serena",
-        f3: "Um espaco privado e tranquilo, ideal para familias.",
-        f4Title: "Tudo facil",
-        f4: "Wi-Fi rapido e estacionamento gratuito para uma estadia sem complicacoes.",
-        f5Title: "Base perfeita",
-        f5: "A poucos minutos do centro historico de Guimaraes e de otimos passeios na regiao.",
-        galleryKicker: "Veja o ambiente",
-        galleryTitle: "Galeria",
-        galleryIntro: "Uma amostra rapida dos espacos, da atmosfera e da paisagem envolvente.",
-        g1: "Vistas do jardim para comecar o dia com calma",
-        g2: "Terraco do bungalow para fins de tarde longos",
-        g3: "Piscina exterior para aproveitar o sol",
-        g4: "Paisagens do Norte de Portugal logo ali ao lado",
-        experiencesKicker: "Explore a regiao",
-        experiences: "Experiencias e Regiao",
-        experiencesIntro: "O bungalow fica perto de patrimonio, gastronomia e percursos ao ar livre que tornam a estadia autentica.",
-        exp1: "Descubra rotas de vinho, trilhos pedestres e castelos medievais.",
-        exp2: "Saboreie a gastronomia portuguesa autentica nas redondezas.",
-        exp3: "Planeie passeios por aldeias, mercados e miradouros junto ao rio.",
-        reviewsKicker: "Hospedes em primeiro lugar",
-        reviews: "Testemunhos",
-        r1: "\"Adoramos o jardim e a tranquilidade do lugar.\" - Anne (NL)",
-        r2: "\"Perfeito para a nossa familia. Vamos voltar.\" - Marta (ES)",
-        r3: "\"Os melhores anfitrioes e um bungalow lindissimo.\" - Tomas (PT)",
-        contactKicker: "Planeie a estadia",
-        contact: "Contacto e Localizacao",
-        contactTxt: "Tem perguntas? Fale connosco por WhatsApp ou email e use o mapa abaixo para encontrar o refugio.",
-        email: "Enviar email",
-        whatsapp: "WhatsApp",
-        address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Feito em Portugal para estadias calmas e memoraveis - 2026 Martins Bungalow Retreat",
-        mapTitle: "Mapa de localizacao do Martins Bungalow Retreat"
-      },
-      nl: {
-        pageTitle: "Martins Bungalow Retreat - Jouw toevlucht in de wieg van Portugal",
-        pageDescription: "Uniek bungalowverblijf in het hart van Noord-Portugal. Boek direct voor de beste prijs. Meertalige service in het Engels, Portugees, Nederlands en Spaans.",
-        heroEyebrow: "Verblijf in Noord-Portugal",
-        slogan: "Jouw toevlucht in de wieg van Portugal",
-        heroText: "Beleef een unieke vakantie midden in natuur, traditie en de authentieke schoonheid van Noord-Portugal.",
-        book: "Boek Nu",
-        gallery: "Galerij",
-        navHome: "Home",
-        navFeatures: "Pluspunten",
-        navGallery: "Galerij",
-        navExperiences: "Ervaringen",
-        navReviews: "Reviews",
-        navContact: "Contact",
-        featuresKicker: "Verblijf met karakter",
-        features: "Waarom voor ons kiezen?",
-        featuresIntro: "Comfort, privacy en een locatie die rustig reizen eenvoudig maakt.",
-        f1Title: "Sfeervolle rust",
-        f1: "Rustieke tuin en weidse natuurzichten voor stille ochtenden.",
-        f2Title: "Buiten genieten",
-        f2: "Zwembad en zonnig terras voor ontspannen middagen.",
-        f3Title: "Veel privacy",
-        f3: "Een prive en rustige plek die ideaal is voor gezinnen.",
-        f4Title: "Praktisch geregeld",
-        f4: "Snelle Wi-Fi en gratis parkeren voor een zorgeloos verblijf.",
-        f5Title: "Ideale uitvalsbasis",
-        f5: "Dicht bij historisch Guimaraes en de mooiste uitstappen in de regio.",
-        galleryKicker: "Sfeerimpressie",
-        galleryTitle: "Galerij",
-        galleryIntro: "Een snelle blik op de sfeer, de ruimtes en het omliggende landschap.",
-        g1: "Tuinzichten en rustige ochtenden",
-        g2: "Terras bij de bungalow voor lange zomeravonden",
-        g3: "Verfrissend zwembad met de hele dag zon",
-        g4: "Landschappen van Noord-Portugal vlakbij",
-        experiencesKicker: "Ontdek meer",
-        experiences: "Ervaringen en Regio",
-        experiencesIntro: "De bungalow ligt dicht bij erfgoed, gastronomie en buitenroutes die het verblijf lokaal laten aanvoelen.",
-        exp1: "Ontdek wijnroutes, wandelpaden en middeleeuwse kastelen.",
-        exp2: "Geniet van authentieke Portugese gastronomie in de buurt.",
-        exp3: "Plan makkelijke dagtrips langs dorpen, markten en uitzichtpunten aan de rivier.",
-        reviewsKicker: "Gasten eerst",
-        reviews: "Gastenreviews",
-        r1: "\"We hebben echt genoten van de tuin en de rust.\" - Anne (NL)",
-        r2: "\"Perfect voor ons gezin. We komen terug.\" - Marta (ES)",
-        r3: "\"De beste hosts en een prachtig bungalow.\" - Tomas (PT)",
-        contactKicker: "Plan je verblijf",
-        contact: "Contact en Locatie",
-        contactTxt: "Vragen? Neem contact op via WhatsApp of e-mail en gebruik de kaart hieronder om het verblijf te vinden.",
-        email: "E-mail ons",
-        whatsapp: "WhatsApp",
-        address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Gemaakt in Portugal voor rustige, memorabele verblijven - 2026 Martins Bungalow Retreat",
-        mapTitle: "Locatiekaart van Martins Bungalow Retreat"
-      },
-      es: {
-        pageTitle: "Martins Bungalow Retreat - Tu refugio en la cuna de Portugal",
-        pageDescription: "Alojamiento tipo bungalow en el corazon del norte de Portugal. Reserva directa al mejor precio. Atencion en ingles, portugues, neerlandes y espanol.",
-        heroEyebrow: "Escapada en el norte de Portugal",
-        slogan: "Tu refugio en la cuna de Portugal",
-        heroText: "Disfruta de una escapada unica entre la naturaleza, la tradicion y la belleza autentica del norte de Portugal.",
-        book: "Reservar Ahora",
-        gallery: "Galeria",
-        navHome: "Inicio",
-        navFeatures: "Ventajas",
-        navGallery: "Galeria",
-        navExperiences: "Experiencias",
-        navReviews: "Resenas",
-        navContact: "Contacto",
-        featuresKicker: "Una estancia con personalidad",
-        features: "Por que elegirnos?",
-        featuresIntro: "Comodidad, privacidad y una ubicacion que hace que viajar sin prisa resulte natural.",
-        f1Title: "Ambiente rustico",
-        f1: "Jardin rustico y vistas amplias a la naturaleza para empezar el dia con calma.",
-        f2Title: "Confort exterior",
-        f2: "Piscina y terraza soleada pensadas para tardes relajadas.",
-        f3Title: "Privacidad total",
-        f3: "Un espacio privado y tranquilo ideal para familias.",
-        f4Title: "Todo facil",
-        f4: "Wi-Fi rapido y aparcamiento gratuito para una estancia sin complicaciones.",
-        f5Title: "Base excelente",
-        f5: "A pocos minutos del centro historico de Guimaraes y de grandes excursiones por la region.",
-        galleryKicker: "Mira el ambiente",
-        galleryTitle: "Galeria",
-        galleryIntro: "Un vistazo rapido al ambiente, los espacios y el paisaje de alrededor.",
-        g1: "Vistas al jardin y mananas tranquilas",
-        g2: "Terraza del bungalow para largas tardes de verano",
-        g3: "Piscina exterior para refrescarse al sol",
-        g4: "Paisajes del norte de Portugal muy cerca",
-        experiencesKicker: "Explora mas",
-        experiences: "Experiencias y Region",
-        experiencesIntro: "El bungalow esta cerca de patrimonio, gastronomia y rutas al aire libre que hacen que la estancia se sienta local.",
-        exp1: "Descubre rutas del vino, senderos y castillos medievales.",
-        exp2: "Saborea la gastronomia portuguesa autentica en los alrededores.",
-        exp3: "Planea excursiones sencillas por pueblos, mercados y miradores junto al rio.",
-        reviewsKicker: "Los huespedes primero",
-        reviews: "Opiniones de huespedes",
-        r1: "\"Nos encanto el jardin y la tranquilidad.\" - Anne (NL)",
-        r2: "\"Perfecto para nuestra familia. Volveremos.\" - Marta (ES)",
-        r3: "\"Los mejores anfitriones y un bungalow precioso.\" - Tomas (PT)",
-        contactKicker: "Planifica tu estancia",
-        contact: "Contacto y Ubicacion",
-        contactTxt: "Tienes preguntas? Escribenos por WhatsApp o correo y usa el mapa de abajo para encontrar el alojamiento.",
-        email: "Enviar correo",
-        whatsapp: "WhatsApp",
-        address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Hecho en Portugal para estancias tranquilas y memorables - 2026 Martins Bungalow Retreat",
-        mapTitle: "Mapa de ubicacion de Martins Bungalow Retreat"
-      }
-    };
-
-    const textMap = {
-      slogan: "slogan",
-      "hero-eyebrow": "heroEyebrow",
-      "hero-text": "heroText",
-      "book-btn": "book",
-      "gallery-btn": "gallery",
-      "nav-home": "navHome",
-      "nav-features": "navFeatures",
-      "nav-gallery": "navGallery",
-      "nav-experiences": "navExperiences",
-      "nav-reviews": "navReviews",
-      "nav-contact": "navContact",
-      "features-kicker": "featuresKicker",
-      "features-title": "features",
-      "features-intro": "featuresIntro",
-      "f1-title": "f1Title",
-      f1: "f1",
-      "f2-title": "f2Title",
-      f2: "f2",
-      "f3-title": "f3Title",
-      f3: "f3",
-      "f4-title": "f4Title",
-      f4: "f4",
-      "f5-title": "f5Title",
-      f5: "f5",
-      "gallery-kicker": "galleryKicker",
-      "gallery-title": "galleryTitle",
-      "gallery-intro": "galleryIntro",
-      g1: "g1",
-      g2: "g2",
-      g3: "g3",
-      g4: "g4",
-      "experiences-kicker": "experiencesKicker",
-      "experiences-title": "experiences",
-      "experiences-intro": "experiencesIntro",
-      exp1: "exp1",
-      exp2: "exp2",
-      exp3: "exp3",
-      "reviews-kicker": "reviewsKicker",
-      "reviews-title": "reviews",
-      r1: "r1",
-      r2: "r2",
-      r3: "r3",
-      "contact-kicker": "contactKicker",
-      "contact-title": "contact",
-      "contact-txt": "contactTxt",
-      "email-link": "email",
-      "whatsapp-link": "whatsapp",
-      address: "address",
-      "footer-text": "footer"
-    };
-
-    function applyLanguage(lang) {
-      const selectedLang = translations[lang] ? lang : "en";
-      const t = translations[selectedLang];
-
-      document.documentElement.lang = selectedLang;
-      document.title = t.pageTitle;
-
-      const description = document.querySelector('meta[name="description"]');
-      if (description) {
-        description.setAttribute("content", t.pageDescription);
-      }
-
-      Object.entries(textMap).forEach(([id, key]) => {
-        const element = document.getElementById(id);
-        if (element && t[key]) {
-          element.textContent = t[key];
-        }
-      });
-
-      const mapFrame = document.querySelector("iframe");
-      if (mapFrame) {
-        mapFrame.title = t.mapTitle;
-      }
-
-      document.querySelectorAll("[data-lang]").forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.lang === selectedLang));
-      });
-
-      try {
-        localStorage.setItem("preferred-language", selectedLang);
-      } catch (error) {
-        console.warn("Unable to store preferred language.", error);
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("[data-lang]").forEach((button) => {
-        button.addEventListener("click", () => {
-          applyLanguage(button.dataset.lang);
-        });
-      });
-
-      let initialLang = "en";
-      let hasStoredPreference = false;
-
-      try {
-        const storedLanguage = localStorage.getItem("preferred-language");
-        if (storedLanguage) {
-          initialLang = storedLanguage;
-          hasStoredPreference = true;
-        }
-      } catch (error) {
-        console.warn("Unable to read preferred language.", error);
-      }
-
-      if (!hasStoredPreference && navigator.language) {
-        const browserLang = navigator.language.toLowerCase().split("-")[0];
-        if (translations[browserLang]) {
-          initialLang = browserLang;
-        }
-      }
-
-      applyLanguage(initialLang);
-    });
-  </script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

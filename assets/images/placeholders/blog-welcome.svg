@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Welcome article illustration</title>
+  <desc id="desc">Abstract cover with a bungalow doorway, plants, and warm light.</desc>
+  <rect width="1200" height="900" fill="#f7efe2"/>
+  <rect x="700" y="160" width="280" height="470" rx="14" fill="#efe5d5"/>
+  <rect x="780" y="250" width="120" height="250" rx="60" fill="#345844"/>
+  <rect x="0" y="620" width="1200" height="280" fill="#c7a77a"/>
+  <circle cx="220" cy="430" r="130" fill="#537861"/>
+  <circle cx="340" cy="330" r="100" fill="#6b8b72"/>
+  <rect x="255" y="450" width="34" height="170" fill="#75563f"/>
+  <circle cx="980" cy="210" r="74" fill="#f0bc60"/>
+  <text x="86" y="805" fill="#20372a" font-size="52" font-family="Palatino Linotype, Georgia, serif">Welcome story</text>
+</svg>

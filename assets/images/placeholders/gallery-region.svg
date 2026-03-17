@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Regional landscape illustration</title>
+  <desc id="desc">Abstract Northern Portugal landscape with hills, village, and winding road.</desc>
+  <rect width="1200" height="900" fill="#f6efe4"/>
+  <circle cx="980" cy="140" r="82" fill="#f1bf63" opacity="0.82"/>
+  <path d="M0 430 C190 340 360 330 540 390 C750 460 940 450 1200 330 L1200 900 L0 900 Z" fill="#bac8aa"/>
+  <path d="M0 530 C200 450 390 450 580 520 C790 590 990 580 1200 500 L1200 900 L0 900 Z" fill="#6c8c70"/>
+  <path d="M0 660 C220 600 420 590 620 650 C820 710 1030 700 1200 640 L1200 900 L0 900 Z" fill="#3e6049"/>
+  <path d="M100 900 C210 760 340 670 490 620 C640 570 760 540 920 470 L980 520 C790 610 660 670 520 760 C390 844 270 900 160 900 Z" fill="#e7d8b6"/>
+  <rect x="780" y="470" width="70" height="90" fill="#efe5d5"/>
+  <rect x="870" y="430" width="90" height="130" fill="#efe5d5"/>
+  <path d="M770 470 L815 420 L860 470 Z" fill="#7d5a43"/>
+  <path d="M860 430 L915 370 L970 430 Z" fill="#7d5a43"/>
+  <text x="72" y="835" fill="#20372a" font-size="52" font-family="Palatino Linotype, Georgia, serif">Nearby landscapes</text>
+</svg>

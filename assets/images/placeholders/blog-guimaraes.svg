@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Guimaraes guide illustration</title>
+  <desc id="desc">Abstract townscape with towers, stone streets, and a hilltop horizon.</desc>
+  <rect width="1200" height="900" fill="#f7f3eb"/>
+  <path d="M0 320 C240 240 430 250 650 320 C860 390 1030 390 1200 320 L1200 900 L0 900 Z" fill="#c8d4be"/>
+  <path d="M0 470 C220 410 410 420 620 490 C850 570 1030 560 1200 510 L1200 900 L0 900 Z" fill="#7f9a80"/>
+  <rect x="300" y="370" width="110" height="230" fill="#efe5d5"/>
+  <rect x="455" y="320" width="130" height="280" fill="#eadbc0"/>
+  <rect x="630" y="390" width="190" height="210" fill="#efe5d5"/>
+  <path d="M300 370 L355 290 L410 370 Z" fill="#7d5a43"/>
+  <path d="M455 320 L520 220 L585 320 Z" fill="#7d5a43"/>
+  <path d="M630 390 L725 320 L820 390 Z" fill="#7d5a43"/>
+  <path d="M180 900 L560 640 L720 700 L420 900 Z" fill="#d8c39f"/>
+  <text x="82" y="826" fill="#20372a" font-size="52" font-family="Palatino Linotype, Georgia, serif">Guimaraes guide</text>
+</svg>
