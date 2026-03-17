@@ -29,6 +29,31 @@ const homeTranslations = {
       work: "Parking included",
       location: "to Guimaraes"
     },
+    book: {
+      kicker: "Book direct with confidence",
+      title: "A calmer booking experience from the first message",
+      intro: "The page is designed to do two jobs at once: help guests imagine the stay and make it easy to ask about dates with confidence.",
+      card1: {
+        eyebrow: "Direct contact",
+        title: "Fast answers before you commit",
+        text: "Guests can ask about dates, family needs, or local plans without waiting for a complicated booking flow."
+      },
+      card2: {
+        eyebrow: "Trip planning",
+        title: "Local guidance from the start",
+        text: "The bungalow is sold together with the region, which makes the stay feel richer and easier to plan."
+      },
+      card3: {
+        eyebrow: "Flexible pace",
+        title: "A stay that works for different travel styles",
+        text: "Short escapes, family breaks, and slower stays all fit naturally into the way the retreat is presented."
+      },
+      card4: {
+        eyebrow: "Simple enquiry",
+        title: "Email and WhatsApp stay visible all the way down",
+        text: "Visitors never have to wonder what the next step is, because the direct booking path stays clear throughout the page."
+      }
+    },
     stay: {
       kicker: "Stay with character",
       title: "A calm base for couples, families, and longer escapes",
@@ -74,6 +99,26 @@ const homeTranslations = {
         text: "Hiking routes, picnic stops, and scenic drives help position the bungalow as a practical base for exploring."
       }
     },
+    fit: {
+      kicker: "Who it suits",
+      title: "A bungalow stay that works for more than one kind of guest",
+      intro: "One of the easiest ways to improve conversion is to help visitors see themselves here quickly.",
+      card1: {
+        tag: "Couples",
+        title: "Quiet weekends with room to slow down",
+        text: "The outdoor corners, calm atmosphere, and nearby dining make the retreat easy to picture as a relaxed couples break."
+      },
+      card2: {
+        tag: "Families",
+        title: "Easy days built around comfort and space",
+        text: "Families can combine pool time, day trips, and practical conveniences without turning the holiday into hard work."
+      },
+      card3: {
+        tag: "Longer stays",
+        title: "A base for travellers who want more than a quick stop",
+        text: "The bungalow also makes sense for guests who want to stay longer and settle into a quieter rhythm in the region."
+      }
+    },
     journal: {
       kicker: "Journal and blog",
       title: "Stories, guides, and seasonal notes from the region",
@@ -83,17 +128,51 @@ const homeTranslations = {
       story1: {
         tag: "Stay story",
         title: "Welcome to Martins Bungalow Retreat",
-        text: "A first post that introduces the property, the mood of the stay, and what guests can expect."
+        text: "Start with the atmosphere of the retreat and the kind of slower stay guests can expect."
       },
       story2: {
         tag: "Destination guide",
         title: "A relaxed weekend in Guimaraes",
-        text: "A reusable example of the kind of local guide that supports bookings and search traffic."
+        text: "See how local trip ideas help future guests picture their days before they book."
       },
       story3: {
         tag: "Food guide",
         title: "What to taste in Northern Portugal",
-        text: "Another starter article that can grow into a useful blog category for future visitors."
+        text: "Food-led inspiration adds personality to the region and gives visitors one more reason to stay."
+      }
+    },
+    cta: {
+      kicker: "Ready to ask about dates?",
+      title: "Turn the inspiration into an actual stay",
+      text: "If the bungalow feels like the right fit, the next step is simple: send a quick message and ask about availability.",
+      primary: "Email for availability",
+      secondary: "Browse the journal first",
+      meta1Title: "Direct conversation:",
+      meta1Text: "ask practical questions before you decide.",
+      meta2Title: "Local planning:",
+      meta2Text: "get tips that help shape the stay around your interests.",
+      meta3Title: "Simple next step:",
+      meta3Text: "email or WhatsApp keeps the booking path personal and clear."
+    },
+    faq: {
+      kicker: "Before you book",
+      title: "Questions guests often want answered early",
+      intro: "Small practical details often decide whether someone makes contact now or leaves the page for later.",
+      item1: {
+        question: "How close is the bungalow to Guimaraes?",
+        answer: "Close enough for easy heritage visits, dining plans, and day trips, while still feeling quieter and more private than staying in the centre."
+      },
+      item2: {
+        question: "Is it a good choice for families?",
+        answer: "Yes. The current positioning already highlights privacy, outdoor space, pool time, parking, and simple regional outings that suit families well."
+      },
+      item3: {
+        question: "Can guests get recommendations before arrival?",
+        answer: "Yes. The direct contact approach makes it easy to share ideas for food, local visits, and the kind of pace guests want from the trip."
+      },
+      item4: {
+        question: "What is the easiest way to enquire?",
+        answer: "Email and WhatsApp are both available on the page, so visitors can choose the channel that feels fastest and most comfortable."
       }
     },
     contact: {
@@ -104,8 +183,8 @@ const homeTranslations = {
       whatsappLabel: "WhatsApp",
       addressLabel: "Address",
       address: "Rua do Paraiso 123, Guimaraes, Portugal",
-      emailCta: "Email us",
-      whatsappCta: "Message on WhatsApp",
+      emailCta: "Email for availability",
+      whatsappCta: "WhatsApp us",
       mapTitle: "Map showing Martins Bungalow Retreat near Guimaraes"
     },
     footer: {
@@ -141,6 +220,31 @@ const homeTranslations = {
       workValue: "Wi-Fi",
       work: "Estacionamento incluido",
       location: "ate Guimaraes"
+    },
+    book: {
+      kicker: "Reserve com confianca",
+      title: "Uma experiencia de reserva mais calma desde a primeira mensagem",
+      intro: "A pagina faz duas coisas ao mesmo tempo: ajuda o hospede a imaginar a estadia e torna simples perguntar por datas com confianca.",
+      card1: {
+        eyebrow: "Contacto direto",
+        title: "Respostas rapidas antes de decidir",
+        text: "Os hospedes podem perguntar por datas, necessidades da familia ou ideias locais sem entrar num processo complicado."
+      },
+      card2: {
+        eyebrow: "Planeamento",
+        title: "Orientacao local desde o inicio",
+        text: "O bungalow e apresentado em conjunto com a regiao, o que torna a estadia mais rica e mais facil de planear."
+      },
+      card3: {
+        eyebrow: "Ritmo flexivel",
+        title: "Uma estadia que funciona para estilos de viagem diferentes",
+        text: "Escapadinhas curtas, viagens em familia e estadias mais lentas encaixam naturalmente na forma como o refugio e apresentado."
+      },
+      card4: {
+        eyebrow: "Pedido simples",
+        title: "Email e WhatsApp visiveis em toda a pagina",
+        text: "O visitante nunca fica sem saber qual e o proximo passo, porque o caminho para a reserva direta permanece sempre claro."
+      }
     },
     stay: {
       kicker: "Estadia com carater",
@@ -187,6 +291,26 @@ const homeTranslations = {
         text: "Percursos pedestres, locais para piquenique e estradas cenicas reforcam o bungalow como base pratica para explorar."
       }
     },
+    fit: {
+      kicker: "Para quem e",
+      title: "Uma estadia em bungalow que funciona para mais de um tipo de hospede",
+      intro: "Uma das formas mais simples de aumentar a conversao e ajudar o visitante a reconhecer-se aqui rapidamente.",
+      card1: {
+        tag: "Casais",
+        title: "Fins de semana tranquilos com espaco para abrandar",
+        text: "Os cantos exteriores, a atmosfera calma e a restauracao proxima fazem o refugio funcionar bem para uma escapadinha a dois."
+      },
+      card2: {
+        tag: "Familias",
+        title: "Dias faceis pensados para conforto e espaco",
+        text: "As familias podem combinar piscina, passeios e comodidades praticas sem transformar as ferias num esforco."
+      },
+      card3: {
+        tag: "Estadias longas",
+        title: "Uma base para quem quer mais do que uma paragem rapida",
+        text: "O bungalow tambem faz sentido para hospedes que querem ficar mais tempo e entrar num ritmo mais tranquilo na regiao."
+      }
+    },
     journal: {
       kicker: "Blog e historias",
       title: "Historias, guias e notas sazonais da regiao",
@@ -196,17 +320,51 @@ const homeTranslations = {
       story1: {
         tag: "Historia da estadia",
         title: "Bem-vindo ao Martins Bungalow Retreat",
-        text: "Um primeiro artigo que apresenta a propriedade, o ambiente da estadia e o que os hospedes podem esperar."
+        text: "Comece pelo ambiente do refugio e pelo tipo de estadia calma que os hospedes podem esperar."
       },
       story2: {
         tag: "Guia de destino",
         title: "Um fim de semana tranquilo em Guimaraes",
-        text: "Um exemplo reutilizavel do tipo de guia local que ajuda nas reservas e nas pesquisas."
+        text: "Veja como ideias locais ajudam futuros hospedes a imaginar os dias antes de reservar."
       },
       story3: {
         tag: "Guia gastronomico",
         title: "O que provar no Norte de Portugal",
-        text: "Outro artigo inicial que pode crescer como uma categoria util para futuros visitantes."
+        text: "Inspiracao gastronomica da personalidade a regiao e acrescenta mais uma razao para ficar."
+      }
+    },
+    cta: {
+      kicker: "Pronto para perguntar por datas?",
+      title: "Transforme a inspiracao numa estadia real",
+      text: "Se o bungalow parece ser a escolha certa, o passo seguinte e simples: envie uma mensagem rapida e pergunte pela disponibilidade.",
+      primary: "Enviar email sobre datas",
+      secondary: "Ver primeiro o blog",
+      meta1Title: "Conversa direta:",
+      meta1Text: "esclareca duvidas praticas antes de decidir.",
+      meta2Title: "Planeamento local:",
+      meta2Text: "receba dicas que ajudam a moldar a estadia aos seus interesses.",
+      meta3Title: "Proximo passo simples:",
+      meta3Text: "email ou WhatsApp mantem a reserva pessoal e clara."
+    },
+    faq: {
+      kicker: "Antes de reservar",
+      title: "Perguntas a que os hospedes gostam de ter resposta cedo",
+      intro: "Pequenos detalhes praticos decidem muitas vezes se alguem entra em contacto ja ou deixa a pagina para depois.",
+      item1: {
+        question: "A que distancia fica o bungalow de Guimaraes?",
+        answer: "Perto o suficiente para visitas faceis, refeicoes e passeios, mas ainda assim mais calmo e reservado do que ficar no centro."
+      },
+      item2: {
+        question: "E uma boa opcao para familias?",
+        answer: "Sim. A forma como o espaco e apresentado ja destaca privacidade, area exterior, momentos de piscina, estacionamento e saidas simples pela regiao."
+      },
+      item3: {
+        question: "Os hospedes podem pedir recomendacoes antes da chegada?",
+        answer: "Sim. O contacto direto torna facil partilhar ideias de gastronomia, visitas locais e o ritmo de viagem que cada pessoa procura."
+      },
+      item4: {
+        question: "Qual e a forma mais simples de fazer um pedido?",
+        answer: "Email e WhatsApp estao disponiveis na pagina, por isso cada visitante pode escolher o canal que parecer mais rapido e confortavel."
       }
     },
     contact: {
@@ -217,8 +375,8 @@ const homeTranslations = {
       whatsappLabel: "WhatsApp",
       addressLabel: "Morada",
       address: "Rua do Paraiso 123, Guimaraes, Portugal",
-      emailCta: "Enviar email",
-      whatsappCta: "Mensagem no WhatsApp",
+      emailCta: "Enviar email sobre datas",
+      whatsappCta: "Falar no WhatsApp",
       mapTitle: "Mapa do Martins Bungalow Retreat perto de Guimaraes"
     },
     footer: {
@@ -254,6 +412,31 @@ const homeTranslations = {
       workValue: "Wi-Fi",
       work: "Parking incluido",
       location: "hasta Guimaraes"
+    },
+    book: {
+      kicker: "Reserva con confianza",
+      title: "Una experiencia de reserva mas tranquila desde el primer mensaje",
+      intro: "La pagina hace dos cosas a la vez: ayuda al visitante a imaginar la estancia y facilita preguntar por fechas con confianza.",
+      card1: {
+        eyebrow: "Contacto directo",
+        title: "Respuestas rapidas antes de decidir",
+        text: "Los huespedes pueden preguntar por fechas, necesidades familiares o planes locales sin pasar por un proceso complicado."
+      },
+      card2: {
+        eyebrow: "Planificacion",
+        title: "Orientacion local desde el principio",
+        text: "El bungalow se presenta junto con la region, lo que hace que la estancia resulte mas rica y mas facil de organizar."
+      },
+      card3: {
+        eyebrow: "Ritmo flexible",
+        title: "Una estancia que funciona para distintos estilos de viaje",
+        text: "Escapadas cortas, viajes en familia y estancias mas lentas encajan de forma natural en la manera en que se presenta el refugio."
+      },
+      card4: {
+        eyebrow: "Consulta simple",
+        title: "Email y WhatsApp visibles durante toda la pagina",
+        text: "El visitante nunca se pregunta cual es el siguiente paso, porque la reserva directa permanece clara en todo momento."
+      }
     },
     stay: {
       kicker: "Una estancia con carater",
@@ -300,6 +483,26 @@ const homeTranslations = {
         text: "Las rutas, zonas de picnic y carreteras panoramicas posicionan el bungalow como base practica para explorar."
       }
     },
+    fit: {
+      kicker: "Para quien es",
+      title: "Un bungalow que funciona para mas de un tipo de huesped",
+      intro: "Una de las maneras mas sencillas de mejorar la conversion es ayudar al visitante a verse aqui rapidamente.",
+      card1: {
+        tag: "Parejas",
+        title: "Fines de semana tranquilos con espacio para bajar el ritmo",
+        text: "Los rincones exteriores, la atmosfera calmada y la oferta gastronomica cercana hacen facil imaginarlo como una escapada en pareja."
+      },
+      card2: {
+        tag: "Familias",
+        title: "Dias faciles pensados para comodidad y espacio",
+        text: "Las familias pueden combinar piscina, excursiones y comodidades practicas sin convertir las vacaciones en trabajo."
+      },
+      card3: {
+        tag: "Estancias largas",
+        title: "Una base para quienes quieren algo mas que una parada rapida",
+        text: "El bungalow tambien encaja con viajeros que quieren quedarse mas tiempo y entrar en un ritmo mas tranquilo en la region."
+      }
+    },
     journal: {
       kicker: "Blog e historias",
       title: "Historias, guias y notas de temporada de la region",
@@ -309,17 +512,51 @@ const homeTranslations = {
       story1: {
         tag: "Historia de la estancia",
         title: "Bienvenidos a Martins Bungalow Retreat",
-        text: "Una primera entrada que presenta la propiedad, el ambiente de la estancia y lo que los huespedes pueden esperar."
+        text: "Empieza por el ambiente del refugio y por el tipo de estancia tranquila que pueden esperar los huespedes."
       },
       story2: {
         tag: "Guia de destino",
         title: "Un fin de semana relajado en Guimaraes",
-        text: "Un ejemplo reutilizable del tipo de guia local que ayuda a las reservas y al trafico organico."
+        text: "Mira como las ideas locales ayudan a los futuros huespedes a imaginar sus dias antes de reservar."
       },
       story3: {
         tag: "Guia gastronomica",
         title: "Que probar en el norte de Portugal",
-        text: "Otra entrada inicial que puede crecer como categoria util para futuros visitantes."
+        text: "La inspiracion gastronomica da mas personalidad a la region y suma otra razon para quedarse."
+      }
+    },
+    cta: {
+      kicker: "Listo para preguntar por fechas?",
+      title: "Convierte la inspiracion en una estancia real",
+      text: "Si el bungalow te parece la opcion adecuada, el siguiente paso es simple: envia un mensaje rapido y pregunta por disponibilidad.",
+      primary: "Enviar correo por fechas",
+      secondary: "Ver primero el blog",
+      meta1Title: "Conversacion directa:",
+      meta1Text: "resuelve dudas practicas antes de decidir.",
+      meta2Title: "Plan local:",
+      meta2Text: "recibe ideas que ayuden a adaptar la estancia a tus intereses.",
+      meta3Title: "Siguiente paso simple:",
+      meta3Text: "correo o WhatsApp mantienen la reserva personal y clara."
+    },
+    faq: {
+      kicker: "Antes de reservar",
+      title: "Preguntas que los huespedes suelen querer resolver pronto",
+      intro: "Los detalles practicos pequenos suelen decidir si alguien contacta ahora o deja la pagina para mas tarde.",
+      item1: {
+        question: "A que distancia esta el bungalow de Guimaraes?",
+        answer: "Lo bastante cerca para visitas faciles, comidas y excursiones, pero con una sensacion mas tranquila y privada que alojarse en el centro."
+      },
+      item2: {
+        question: "Es una buena opcion para familias?",
+        answer: "Si. La propuesta ya destaca privacidad, espacio exterior, momentos de piscina, aparcamiento y salidas sencillas por la region."
+      },
+      item3: {
+        question: "Se pueden pedir recomendaciones antes de llegar?",
+        answer: "Si. El contacto directo facilita compartir ideas de comida, visitas locales y el ritmo de viaje que cada huesped busca."
+      },
+      item4: {
+        question: "Cual es la forma mas facil de consultar?",
+        answer: "Correo y WhatsApp estan disponibles en la pagina, asi que cada visitante puede elegir el canal que le resulte mas rapido y comodo."
       }
     },
     contact: {
@@ -330,8 +567,8 @@ const homeTranslations = {
       whatsappLabel: "WhatsApp",
       addressLabel: "Direccion",
       address: "Rua do Paraiso 123, Guimaraes, Portugal",
-      emailCta: "Enviar correo",
-      whatsappCta: "Mensaje por WhatsApp",
+      emailCta: "Enviar correo por fechas",
+      whatsappCta: "Hablar por WhatsApp",
       mapTitle: "Mapa de Martins Bungalow Retreat cerca de Guimaraes"
     },
     footer: {
@@ -367,6 +604,31 @@ const homeTranslations = {
       workValue: "Wi-Fi",
       work: "Parkeren inclusief",
       location: "naar Guimaraes"
+    },
+    book: {
+      kicker: "Boek met vertrouwen",
+      title: "Een rustiger boekingsgevoel vanaf het eerste bericht",
+      intro: "Deze pagina doet twee dingen tegelijk: bezoekers helpen het verblijf te voelen en het makkelijk maken om met vertrouwen naar data te vragen.",
+      card1: {
+        eyebrow: "Direct contact",
+        title: "Snelle antwoorden voordat je beslist",
+        text: "Gasten kunnen naar data, familiewensen of lokale plannen vragen zonder een ingewikkeld boekingsproces."
+      },
+      card2: {
+        eyebrow: "Reisplanning",
+        title: "Lokale hulp vanaf het begin",
+        text: "De bungalow wordt samen met de regio verkocht, waardoor het verblijf rijker en makkelijker te plannen aanvoelt."
+      },
+      card3: {
+        eyebrow: "Flexibel ritme",
+        title: "Een verblijf dat past bij verschillende reisstijlen",
+        text: "Korte escapes, familietrips en tragere verblijven passen allemaal natuurlijk bij de manier waarop het retreat wordt gepresenteerd."
+      },
+      card4: {
+        eyebrow: "Eenvoudige aanvraag",
+        title: "E-mail en WhatsApp blijven overal zichtbaar",
+        text: "Bezoekers hoeven nooit te raden wat de volgende stap is, omdat het directe boekingspad door de hele pagina duidelijk blijft."
+      }
     },
     stay: {
       kicker: "Verblijf met karakter",
@@ -413,6 +675,26 @@ const homeTranslations = {
         text: "Wandelroutes, picknickplekken en mooie autoroutes positioneren de bungalow als praktische uitvalsbasis."
       }
     },
+    fit: {
+      kicker: "Voor wie het past",
+      title: "Een bungalowverblijf dat werkt voor meer dan een type gast",
+      intro: "Een van de makkelijkste manieren om conversie te verbeteren is bezoekers zichzelf hier snel te laten herkennen.",
+      card1: {
+        tag: "Koppels",
+        title: "Rustige weekends met ruimte om te vertragen",
+        text: "De buitenhoeken, rustige sfeer en eetmogelijkheden in de buurt maken het retreat makkelijk voorstelbaar als koppeluitstap."
+      },
+      card2: {
+        tag: "Families",
+        title: "Makkelijke dagen rond comfort en ruimte",
+        text: "Families kunnen zwembadmomenten, uitstappen en praktische gemakken combineren zonder dat de vakantie hard werken wordt."
+      },
+      card3: {
+        tag: "Langere verblijven",
+        title: "Een basis voor reizigers die meer willen dan een korte stop",
+        text: "De bungalow past ook bij gasten die langer willen blijven en in een rustiger ritme van de regio willen komen."
+      }
+    },
     journal: {
       kicker: "Blog en verhalen",
       title: "Verhalen, gidsen en seizoensnotities uit de regio",
@@ -422,17 +704,51 @@ const homeTranslations = {
       story1: {
         tag: "Verblijfsverhaal",
         title: "Welkom bij Martins Bungalow Retreat",
-        text: "Een eerste artikel dat het verblijf, de sfeer en de verwachtingen van gasten introduceert."
+        text: "Begin bij de sfeer van het retreat en het soort rustige verblijf dat gasten kunnen verwachten."
       },
       story2: {
         tag: "Bestemmingsgids",
         title: "Een ontspannen weekend in Guimaraes",
-        text: "Een herbruikbaar voorbeeld van het soort lokale gids dat boekingen en zoekverkeer ondersteunt."
+        text: "Zie hoe lokale ideeen toekomstige gasten hun dagen laten voorstellen voordat ze boeken."
       },
       story3: {
         tag: "Food guide",
         title: "Wat je moet proeven in Noord-Portugal",
-        text: "Nog een startartikel dat kan uitgroeien tot een nuttige categorie voor toekomstige bezoekers."
+        text: "Food-inspiratie geeft de regio meer karakter en voegt nog een reden toe om te blijven."
+      }
+    },
+    cta: {
+      kicker: "Klaar om naar data te vragen?",
+      title: "Maak van inspiratie een echt verblijf",
+      text: "Als de bungalow goed voelt, is de volgende stap eenvoudig: stuur een kort bericht en vraag naar beschikbaarheid.",
+      primary: "Mail voor beschikbaarheid",
+      secondary: "Eerst de blog bekijken",
+      meta1Title: "Direct gesprek:",
+      meta1Text: "stel praktische vragen voordat je beslist.",
+      meta2Title: "Lokale planning:",
+      meta2Text: "krijg tips die het verblijf rond jouw interesses helpen vormen.",
+      meta3Title: "Eenvoudige volgende stap:",
+      meta3Text: "e-mail of WhatsApp houden het boekingspad persoonlijk en duidelijk."
+    },
+    faq: {
+      kicker: "Voor je boekt",
+      title: "Vragen die gasten vaak vroeg willen beantwoorden",
+      intro: "Kleine praktische details bepalen vaak of iemand nu contact opneemt of de pagina voor later bewaart.",
+      item1: {
+        question: "Hoe dicht ligt de bungalow bij Guimaraes?",
+        answer: "Dicht genoeg voor makkelijke bezoeken, etentjes en dagtrips, maar toch rustiger en privater dan in het centrum verblijven."
+      },
+      item2: {
+        question: "Is dit een goede keuze voor families?",
+        answer: "Ja. De huidige positionering benadrukt al privacy, buitenruimte, zwembadtijd, parkeren en eenvoudige uitstappen in de regio."
+      },
+      item3: {
+        question: "Kunnen gasten voor aankomst aanbevelingen krijgen?",
+        answer: "Ja. Het directe contact maakt het makkelijk om ideeen te delen voor eten, lokale bezoeken en het reistempo dat gasten zoeken."
+      },
+      item4: {
+        question: "Wat is de makkelijkste manier om een aanvraag te doen?",
+        answer: "E-mail en WhatsApp zijn allebei beschikbaar op de pagina, zodat bezoekers het kanaal kunnen kiezen dat het snelst en prettigst voelt."
       }
     },
     contact: {
@@ -443,8 +759,8 @@ const homeTranslations = {
       whatsappLabel: "WhatsApp",
       addressLabel: "Adres",
       address: "Rua do Paraiso 123, Guimaraes, Portugal",
-      emailCta: "Mail ons",
-      whatsappCta: "Bericht via WhatsApp",
+      emailCta: "Mail voor data",
+      whatsappCta: "Praat via WhatsApp",
       mapTitle: "Kaart van Martins Bungalow Retreat bij Guimaraes"
     },
     footer: {
