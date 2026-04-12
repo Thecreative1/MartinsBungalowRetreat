@@ -494,16 +494,16 @@
       <a href="#contact" id="nav-contact">Contact</a>
     </nav>
     <div class="lang-select" role="group" aria-label="Language selector">
-      <button type="button" data-lang="en" aria-label="English">
+      <button type="button" data-lang="en" aria-pressed="true" aria-label="English">
         <img src="https://flagcdn.com/gb.svg" alt="" width="22" height="16">
       </button>
-      <button type="button" data-lang="pt" aria-label="Portugues">
+      <button type="button" data-lang="pt" aria-pressed="false" aria-label="Portugues">
         <img src="https://flagcdn.com/pt.svg" alt="" width="22" height="16">
       </button>
-      <button type="button" data-lang="es" aria-label="Espanol">
+      <button type="button" data-lang="es" aria-pressed="false" aria-label="Espanol">
         <img src="https://flagcdn.com/es.svg" alt="" width="22" height="16">
       </button>
-      <button type="button" data-lang="nl" aria-label="Nederlands">
+      <button type="button" data-lang="nl" aria-pressed="false" aria-label="Nederlands">
         <img src="https://flagcdn.com/nl.svg" alt="" width="22" height="16">
       </button>
     </div>
@@ -634,7 +634,8 @@
   </main>
 
   <footer>
-    <p id="footer-text">Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat</p>
+    <p id="footer-text">Made in Portugal for slow, memorable stays</p>
+    <p>&copy; <span data-current-year></span> Martins Bungalow Retreat</p>
     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
   </footer>
   <script>
@@ -693,7 +694,7 @@
         whatsapp: "WhatsApp",
         aboutLink: "Learn more about our story",
         address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Made in Portugal for slow, memorable stays - 2026 Martins Bungalow Retreat",
+        footer: "Made in Portugal for slow, memorable stays",
         mapTitle: "Martins Bungalow Retreat location map"
       },
       pt: {
@@ -750,7 +751,7 @@
         whatsapp: "WhatsApp",
         aboutLink: "Conheca a nossa historia",
         address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Feito em Portugal para estadias calmas e memoraveis - 2026 Martins Bungalow Retreat",
+        footer: "Feito em Portugal para estadias calmas e memoraveis",
         mapTitle: "Mapa de localizacao do Martins Bungalow Retreat"
       },
       nl: {
@@ -807,7 +808,7 @@
         whatsapp: "WhatsApp",
         aboutLink: "Lees ons familieverhaal",
         address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Gemaakt in Portugal voor rustige, memorabele verblijven - 2026 Martins Bungalow Retreat",
+        footer: "Gemaakt in Portugal voor rustige, memorabele verblijven",
         mapTitle: "Locatiekaart van Martins Bungalow Retreat"
       },
       es: {
@@ -864,7 +865,7 @@
         whatsapp: "WhatsApp",
         aboutLink: "Conoce nuestra historia",
         address: "Rua do Paraiso 123, Guimaraes, Portugal",
-        footer: "Hecho en Portugal para estancias tranquilas y memorables - 2026 Martins Bungalow Retreat",
+        footer: "Hecho en Portugal para estancias tranquilas y memorables",
         mapTitle: "Mapa de ubicacion de Martins Bungalow Retreat"
       }
     };
@@ -938,13 +939,13 @@
 
       Object.entries(textMap).forEach(([id, key]) => {
         const element = document.getElementById(id);
-        if (element && t[key]) {
+        if (element && typeof t[key] === "string") {
           element.textContent = t[key];
         }
       });
 
       const mapFrame = document.querySelector("iframe");
-      if (mapFrame) {
+      if (mapFrame && typeof t.mapTitle === "string") {
         mapFrame.title = t.mapTitle;
       }
 
@@ -959,7 +960,16 @@
       }
     }
 
+    function setCurrentYear() {
+      const year = new Date().getFullYear();
+      document.querySelectorAll("[data-current-year]").forEach((element) => {
+        element.textContent = String(year);
+      });
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
+      setCurrentYear();
+
       document.querySelectorAll("[data-lang]").forEach((button) => {
         button.addEventListener("click", () => {
           applyLanguage(button.dataset.lang);

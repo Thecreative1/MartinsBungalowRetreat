@@ -808,7 +808,7 @@ const homeTranslations = {
     },
     about: {
       kicker: "Over ons",
-      title: "Een familie tussen twee werelden, terug bij de wortels",
+      title: "Een familie tussen twee werelden, terugkerend naar haar wortels",
       intro: "Wij zijn Flávio, Karolina, Lara en Liam — een familie die gelooft in een eenvoudiger leven, dichter bij de natuur en meer verbonden met wat echt belangrijk is.",
       p1: "Ik, Flávio, kom uit Guimarães, een stad die altijd deel heeft uitgemaakt van wie ik ben. Ik groeide op tussen historische straten, graniet, bergen in de buurt en die Minho-manier van leven waarin werk, familie en een stille trots op onze wortels samenkomen. Maar op mijn achttiende, met de wens om de wereld te leren kennen en die onrust van iemand die voelt dat er altijd meer te ontdekken valt, vertrok ik naar Nederland. Het was een beslissing vol moed, nieuwsgierigheid en mijn eigen manier van in het leven staan: open voor het nieuwe, het onbekende en de ervaringen die ons laten groeien.",
       p2: "Wat begon als een avontuur groeide uit tot meer dan 25 jaar leven in Nederland. Daar bouwde ik een groot deel van mijn levenspad op, leerde ik andere manieren van leven, werken en naar de wereld kijken kennen. En het was ook daar dat ik Karolina ontmoette, met wie ik trouwde en met wie ik ons gezin heb opgebouwd. Veel belangrijke hoofdstukken van ons verhaal zijn in Nederland ontstaan, en daarom zal het voor ons altijd een heel bijzonder land blijven — een land waar we oprecht van houden en dat altijd deel van ons leven zal uitmaken.",

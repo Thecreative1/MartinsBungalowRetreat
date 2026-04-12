@@ -317,7 +317,7 @@ a:focus-visible {
 .article-content h2,
 .article-content h3,
 .split-layout h3,
-.post-card h2,
+.post-card h3,
 .story-card h3 {
   margin-top: 0;
   font-family: var(--heading-font);
